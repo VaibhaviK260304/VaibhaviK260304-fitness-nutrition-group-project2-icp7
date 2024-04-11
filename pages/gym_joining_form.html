@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Joining Form</title>
+    
+</head>
+
+<body>
+    <div class="container">
+        <h2>Gym Joining Form</h2>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <hr>
+            <h3>Contact Details </h3>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="emergencyContact">Mobile Number:</label>
+                <input type="text" id="emergencyContact" name="emergencyContact">
+            </div>
+
+            <div class="form-group radio-group">
+                <label>Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age" required>
+            </div>
+
+            <div class="form-group  radio-group">
+                <label>Health Insurance:</label><br>
+                <input type="radio" id="healthInsuranceYes" name="healthInsurance" value="yes" required>
+                <label for="healthInsuranceYes">Yes</label>
+                <input type="radio" id="healthInsuranceNo" name="healthInsurance" value="no">
+                <label for="healthInsuranceNo">No</label>
+            </div>
+            <hr>
+            <h3>Address</h3>
+            <div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address">
+                </div>
+    
+                <div class="form-group">
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city">
+                </div>
+    
+                <div class="form-group">
+                    <label for="state">State:</label>
+                    <input type="text" id="state" name="state">
+                </div>
+    
+                <div class="form-group">
+                    <label for="zipcode">Zip Code:</label>
+                    <input type="text" id="zipcode" name="zipcode">
+                </div>
+            </div>
+            <hr>
+            <div class="form-group">
+                <label>Pre - existing medical condition</label><br>
+                <input type="checkbox" id="diabetes" name="medical-condition" value="diabetes">
+                <label for="diabetes">Diabetes</label>
+                <input type="checkbox" id="brokenbones" name="medical-condition" value="brokenbones">
+                <label for="brokenbones">Broken Bones</label>
+                <input type="checkbox" id="hypertension" name="medical-condition" value="hypertension">
+                <label for="hypertension">Hypertension</label>
+                <input type="checkbox" id="Lowbloodpresure" name="medical-condition" value="Lowbloodpresure">
+                <label for="Lowbloodpresure">Low blood presure</label>
+                <input type="checkbox" id="asthma" name="medical-condition" value="asthma">
+                <label for="asthma">Asthma</label>
+                <input type="checkbox" id="allergies" name="medical-condition" value="allergies">
+                <label for="allergies">Allergies</label>
+                <input type="checkbox" id="chestpains" name="medical-condition" value="chestpains">
+                <label for="chestpains">Chest pains</label>
+            </div>
+            <div class="form-group">
+                <label for="addtionalmedicalnotes">Addtional Medical Notes</label><br>
+                <textarea name="addtionalmedicalnotes" id="addtionalmedicalnotes" cols="30" rows="10"></textarea>
+            </div>
+            <input type="submit" value="Join">
+        </form>
+    </div>
+</body>
+
+</html>
