@@ -110,6 +110,7 @@ a {
 
 .side-content h6 {
     width: 100%;
+    color: #fff;
     font-size: 19px;
 }
 
@@ -117,6 +118,10 @@ a {
     width: 100%;
     font-size: 40px;
     color: gold;
+}
+.side-content p{
+    color: #fff;
+    opacity: 0.9;
 }
 
 @media screen and (max-width: 1199px) {
@@ -178,9 +183,20 @@ a {
     margin-left: auto;
     color: gold;
 }
+#daily-routine{
+    position: absolute;
+    
+}
+
 @media screen and (max-width: 768px){
     .gym-banner-container{
         height:  60vh;
+    }
+
+    #daily-routine{
+        position: relative;
+        margin: auto;
+
     }
 
 }
@@ -215,7 +231,11 @@ a {
     .side-content {
         padding: 1rem;
     }
-
+    #daily-routine{
+        position: relative;
+        margin: auto;
+       
+    }
     .gym-banner-container .container a {
         font-size: small;
         height: 30px;
@@ -223,7 +243,7 @@ a {
         padding: 0 15px;
     }
     .card-footer h2{
-        font-size: small;
+        font-size: 22px;
     }
 }
 
@@ -246,5 +266,4 @@ a {
 .animation {
     animation: roll 1s infinite;
     transition: all .55s ease-out;
-
 }
