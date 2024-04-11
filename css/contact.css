@@ -22,3 +22,48 @@ span{
     justify-content: center;
 
 }
+
+.contactText{
+    margin-left: 25px;
+    color: gold;
+    margin-top: 134px;
+    font-size: 32px;
+}
+.contactPage img{
+    width: 60%;
+    margin-left: 33px;
+}
+
+.contactUs{
+    text-align: center;
+    margin-top: 22px;
+}
+
+.contactUs input{
+    width: 350px;
+    padding: 8px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    margin-top: 18px;
+    background-color: rgb(228, 216, 216);
+}
+
+.contactUs button{
+    width: 350px;
+    height: 40px;
+    color: white;
+    border: none;
+    font-size: 22px;
+    background-color: gold;
+    border-radius: 5px;
+    margin-top: 22px;
+}
+
+.contactUs button:hover{
+    border: 2px solid black;
+    background-color: transparent;
+    color: gold;
+}
