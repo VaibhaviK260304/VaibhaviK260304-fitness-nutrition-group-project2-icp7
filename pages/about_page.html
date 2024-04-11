@@ -77,10 +77,48 @@
         border-radius: 10px;
         margin: 10px;
         box-shadow: 0px 0px 8px 2px #acacac;
+       display: flex;
+      width: 300px;
+    }
+    .sub-container2{
+        justify-content: space-evenly;
+        display: flex;
+    }
+    .sm-img{
+        height: 70px;
+        padding: 5px;
     }
     </style>
 </head>
 <body>
+    <div class="home_img_container">
+        <nav class="navbar navbar-expand-lg text-bg-warning">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="../img/img1.png" height="70px" img-bg-warning ></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Guide</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Feedback</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">LOG IN</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
    <div class="main-container">
     <img src="../img/about-page/gym.png" alt="fitness_img" class="fitness" id="slider"/>
      <div class="sub-container">
@@ -112,22 +150,22 @@
    </div>
 
    <hr>
-   <div class="row">
-    <div class="col box-container"> 
-        <img src=" " alt="small-img"/>
-        Many years leagcy
+   <div class=" sub-container2">
+    <div class=" box-container"> 
+        <img src="../icons/about/gym.png" alt="small-img" class="sm-img"/>
+       <h6> MANY YEARS LEGACY </h6>
     </div>
-    <div class="col box-container">
-        <img src=" " alt="small-img"/>
-        500+ FREE WORKOUTS
+    <div class=" box-container">
+        <img src="../icons/about/lotus.png" alt="small-img" class="sm-img"/>
+          <h6>500+ FREE WORKOUTS</h6>
     </div>
-    <div class="col box-container">
-        <img src=" " alt="small-img"/>
-        PROGRAMS THAT WORK
+    <div class=" box-container">
+        <img src="../icons/about/nutrition-plan.png" alt="small-img" class="sm-img"/>
+        <h6> PROGRAMS THAT WORK </h6>
     </div>
-    <div class="col box-container">
-        <img src=" " alt="small-img"/>
-        POWERED BY YOU
+    <div class=" box-container">
+        <img src="../icons/about/dumbbell.png" alt="small-img" class="sm-img"/>
+           <h6>POWERED BY YOU</h6>
     </div>
    </div>
    <script src="../js/about.js"></script>
