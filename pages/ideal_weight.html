@@ -4,8 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/ideal_weight.css">
 </head>
 <body>
-    <h1>IDEAL WEIGHT CALCULATION PAGE.</h1>
+    <div class="conatainer">
+        <div class="box">
+            <h1>IDEAL WEIGHT CALCULATOR</h1>
+            <div class="contant">
+            <div class="input">
+                <label for="Age">Age: </label>
+                <input type="number"  id="Age">
+            </div>
+                <div class="input">
+                    <label for="height">Height(cm) : </label>
+                    <input type="number" id="height">
+                </div>
+                <button id="Calculate">Calculate Ideal Weight</button>
+            </div>
+            <div class="result">
+                <p>Your Ideal Weight</p>
+                <div class="result">00.00</div>
+                <p>Comment:Your Weight is <span
+                    id="comment"> Healthy</span></p>
+            </div>
+        </div>
+
+    </div>
 </body>
 </html>

@@ -1,0 +1,18 @@
+.contact-container{
+    background-color: rgb(243, 238, 238);
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+    width: 600px;
+    box-shadow: 1px 1px 10px 0 rgb(15, 15, 16);
+    padding: 25px 30px;
+}
+.btn-color{
+    padding:5px 20px;
+    font-size: 17px;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    background-color: gold;
+    cursor: pointer;
+}

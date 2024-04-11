@@ -6,50 +6,16 @@
     <title>FITNESS AND NUTRITION</title>
 </head>
 <link rel="stylesheet" href="./css/index.css"/>
+<link rel="stylesheet" href="./css/style.css"/>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
 integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-crossorigin="anonymous"></script>
 <style>
-    body{
-        height: 100%;
-        width: 100%;
-        display: inline-block;
-        justify-content: center;
-        align-items: center;
-        background-color:  #dcdde1;
-    }
     .home_img_container{
-        height: 800px !important;
-        width: 100% !important;
-        background: url('./img/home/bg.webp');
+        height: 1000px;
+        width: 100%;
+        background: url('./img/home/home1.jpg');
         background-repeat: no-repeat;
-        width: 100%;
-        position: relative;
         background-size: cover;
-    }
-    .start{
-        color: gold;
-        margin: 20px auto;
-        font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
-        border: solid 2px goldenrod;
-        display: block;
-        height: 100px;
-        line-height: 50px;
-        width: 100%;
-        font-size: 3em;
-        cursor: pointer;
-        line-gap-override:  20px;
-    }
-    .home_content{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0 0;
-        position: relative;
-        visibility: visible;
     }
     .quote{
         max-width: 650px;
@@ -88,11 +54,11 @@ crossorigin="anonymous"></script>
     }
     @keyframes quoteAnimation {
         0%   {opacity: 1;}
-        50%  {transform: translateY(-5%) rotate(5deg); opacity: 1;}
+        50%  {transform: translatex(-5%) rotate(5deg); opacity: 1;}
     }
     @keyframes quote1Animation{
         0%   {opacity: 1;}
-        50%  {transform: translateY(-5%) rotate(5deg); opacity:1 ;}
+        50%  {transform: translatex(-5%) rotate(5deg); opacity:1 ;}
     }
     .quote2{
         max-width: 650px;
@@ -112,18 +78,89 @@ crossorigin="anonymous"></script>
         border: 5px  solid black;
         box-shadow: 7px 7px 20px black;
     }
+    .card1{
+        margin: 10px 10px;
+        width: 40%;
+        height: auto;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+    .card2{
+        margin: 10px 10px;
+        width: 40%;
+        height: auto;
+        justify-content: space-around;
+        align-items: start;
+        flex-direction: column;
+    }
+    .card3{
+        margin: 10px 10px;
+        width: 40%;
+        height: auto;
+        justify-content: space-around;
+        align-items: end;
+        flex-direction: column;
+    }
+    .btn-color{
+        background-color: gold;
+    }
+    .start1{
+        color: aliceblue;
+        font-size: 40px;
+    }
+    .div-color{
+        background-color: burlywood
+    }
+    .div-color1{
+        background-color: blanchedalmond;
+    }
 </style>
 <body>
     <div class="home_img_container">
-        <div class="container">
+        <nav class="navbar navbar-expand-lg text-bg-warning">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img src="./img/img1.png" height="70px" img-bg-warning ></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./pages/about_page.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./pages/contact_page.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./pages/guide_page.html">Guide</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./pages/rating&review.html">Feedback</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./pages/">LOG IN</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+            <div class="container">
             <div class="row justify-content-center align-items-start">
                 <div class="col-md-6 left text-start mt-5">
                     <h1 style="font-family:'Times New Roman', Times, serif;" class="start">LET'S START THE FITNESS JOURNEY!</h1>
                 </div>
             </div>
-        </div>
-    </div>
-    <section class="home_content q">
+            </div><br/><br/><br/><br/><br/>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 left text-start mt-5">
+                        <b><h1 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" class="start1">Health and fitness</h1><h2 class="start1">is the state of </h2><h1 class="start1">being healthy both,<br/>physically and mentally.</h1></b>
+                    </div>
+            </div>
+            </div>
+    </div><br/>
+    <section class="home_content q div-color1">
         <div class="container">
             <div >
             <figure class="text-center">
@@ -151,6 +188,109 @@ crossorigin="anonymous"></script>
             </figure>
             </div>
             </div>
-    </section>
+    </section><br/>
+    <div class="div-color">
+    <h1 class="text-center"><u><b>READY</b></u></h1>
+    <h1 class="text-center"><u><b>SET</b></u></h1>
+    <h1 class="text-center"><u><b>GO!!</b></u></h1>
+    <div class="container d-flex  flex-wrap justify-content-around">
+    <div class="card card1 text-bg-dark">
+        <img src="./img/home/for boys.jpg" class="card-img" alt="...">
+        <div class="card-img-overlay">
+          <p class="card-text"></p>
+          <h1 class="card-title">FOR BOYS</h1>
+          <a href="#" class="btn btn-color">Learn More</a>
+        </div>
+      </div>
+    <div class="card card2 text-bg-dark">
+        <img src="./img/home/for girls.avif" class="card-img" alt="...">
+        <div class="card-img-overlay">
+            <p class="card-text"></p>
+            <h1 class="card-title">FOR GIRLS</h1>
+            <a href="#" class="btn btn-color">Learn More</a>
+        </div>
+    </div>
+    <div class="card card3 text-bg-dark">
+        <img src="./img/home/yoga.jpg" class="card-img" alt="...">
+        <div class="card-img-overlay">
+            <p class="card-text"></p>
+            <h1 class="card-title">YOGA</h1>
+            <a href="#" class="btn btn-color">Learn More</a>
+        </div>
+    </div>
+    <div class="card card3 text-bg-dark">
+        <img src="./img/home/gym.webp" class="card-img" alt="...">
+        <div class="card-img-overlay">
+            <p class="card-text"></p>
+            <h1 class="card-title">GYM</h1>
+            <a href="#" class="btn btn-color">Learn More</a>
+        </div>
+    </div>
+    </div>
+    </div><br/>
+
+    <div class="div-3">
+        <h1 class="text-center text-bg-warning">20 YEARS OF EXPERIENCE</h1>
+        <div class="container d-flex  flex-wrap justify-content-around">
+            <section>
+                <b><h2>Featured Services</h2></b>
+                <p>Personal Training, Group Fitness Classes, Nutrition Counseling</p>
+                <b><h3>Personal Training</h3></b>
+                <p>Our certified personal trainers will work with you one-on-one to create a customized workout plan tailored to your individual goals and fitness level. Whether you're looking to lose weight, build muscle, or improve your overall health, our trainers will provide the guidance and support you need to succeed.</p>
+                <b><h3>Group Fitness Classes</h3></b>
+                <p>Our group fitness classes are a fun and social way to get in shape. From yoga and Pilates to high-intensity interval training and cycling, we offer a variety of classes to suit every fitness level and interest. Our certified instructors will lead you through a challenging and rewarding workout that will leave you feeling energized and empowered.</p>
+                <b><h3>Nutrition Counseling</h3></b>
+                <p>Good nutrition is an essential part of any fitness plan. Our registered dietitians will work with you to create a personalized nutrition plan that fits your lifestyle and dietary needs. Whether you're looking to lose weight, build muscle, or improve your overall health, our nutrition counseling services will help you make informed decisions about the foods you eat.</p>
+            </section>
+        </div>
+    </div>
+    <b><h2 class="text-center text-bg-warning">Our Mission</h2></b>
+    <p class="text-center">"Our mission is to empower individuals to reach their full potential through fitness and nutrition."
+        <br/>"We are committed to providing high-quality fitness and nutrition services to help our clients achieve their health and wellness goals."
+        <br/>"Our mission is to create a supportive and inclusive community where everyone can feel welcome and motivated to improve their health and fitness."
+        <br/>"We believe that fitness and nutrition are essential components of a healthy and fulfilling life, and we are dedicated to helping our clients make positive changes that will last a lifetime."
+        <br/>"Our mission is to help our clients build strength, confidence, and resilience through fitness and nutrition, and to empower them to live their best lives."</p>
+
+
+
+
+</div><hr/>
+
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>About Us</h3>
+            <p>We are a fitness site dedicated to helping you reach your health and wellness goals. Our team of certified trainers and nutritionists are here to support you every step of the way.</p>
+        </div>
+        <div class="footer-column">
+            <h3>Services</h3>
+            <ul>
+                <li><a href="/personal-training">Personal Training</a></li>
+                <li><a href="/group-fitness-classes">Group Fitness Classes</a></li>
+                <li><a href="/nutrition-counseling">Nutrition Counseling</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <p>Email: info@fitnesssite.com<br>Phone: (123) 456-7890<br>Address: 123 Main St, Anytown USA 12345</p>
+        </div>
+        <div class="footer-column">
+            <h3>Follow Us</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/fitnesssite">Facebook</a></li>
+                <li><a href="https://www.twitter.com/fitnesssite">Twitter</a></li>
+                <li><a href="https://www.instagram.com/fitnesssite">Instagram</a></li>
+            </ul>
+        </div>
+    </div><br/>
+    <div class="footer-copyright">
+        <p>&copy; 2023 Fitness Site. All rights reserved.</p>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
-</html>
+</html> 
