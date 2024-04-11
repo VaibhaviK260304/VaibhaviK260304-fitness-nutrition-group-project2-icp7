@@ -2,21 +2,22 @@
 
 function submit(){
     let name = document.getElementById("name");
-    let number = document.getElementById("number");
+    let email = document.getElementById("email");
+    let message = document.getElementById("message");
 
     if(name.value == "")
     {
         alert("Please Enter Your Name")
     }
     else 
-    if(number.value == "")
-    {
-        alert("Please Enter Your Number")
-    }
-    else 
     if(email.value == "")
     {
-        alert("Please Enter Your Email ID")
+        alert("Please Enter Your Email")
+    }
+    else 
+    if(message.value == "")
+    {
+        alert("Please Enter Your Message")
     }
 
     else
