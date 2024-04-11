@@ -14,7 +14,8 @@ body{
     display: block;
     margin: 20px auto;
     border-radius: 15px;
-    width: 600px;
+    width: 450px;
+    height: 450px;
     box-shadow: 1px 1px 10px 0 rgb(15, 15, 16);
     padding: 25px 30px;
 }  
