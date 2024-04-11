@@ -177,6 +177,38 @@
             <input type="submit" value="Join">
         </form>
     </div>
+    <script>
+        function validateForm() {
+            const fullname = document.getElementById("fullname").value;
+            const email = document.getElementById("email").value;
+            const gender = document.querySelector('input[name="gender"]:checked');
+            const dob = document.getElementById("dob").value;
+            const healthInsurance = document.querySelector('input[name="healthInsurance"]:checked');
+            const address = document.getElementById("address").value;
+            const city = document.getElementById("city").value;
+            const state = document.getElementById("state").value;
+            const zipcode = document.getElementById("zipcode").value;
+            const emergencyContact = document.getElementById("emergencyContact").value;
+
+            if (!fullname || !email || !gender || !dob || !healthInsurance || !address || !city || !state || !zipcode || !emergencyContact) {
+                console.log("Please fill in all required fields.");
+                return false;
+            }
+
+            console.log("Full Name: " + fullname);
+            console.log("Email: " + email);
+            console.log("Gender: " + gender.value);
+            console.log("Date of Birth: " + dob);
+            console.log("Health Insurance: " + healthInsurance.value);
+            console.log("Address: " + address);
+            console.log("City: " + city);
+            console.log("State: " + state);
+            console.log("Zip Code: " + zipcode);
+            console.log("Emergency Contact Number: " + emergencyContact);
+
+            return true;
+        }
+    </script>
 </body>
 
 </html>
