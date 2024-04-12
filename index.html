@@ -83,6 +83,40 @@ crossorigin="anonymous"></script>
         border: 5px  solid black;
         box-shadow: 7px 7px 20px black;
     }
+    .quote3{
+        max-width: 650px;
+        animation: quoteAnimation 8s infinite ease-in-out;
+        margin: 0 0 ;
+        padding: 30px 30px;
+        float: right;
+        font-size: 45px;
+        font-weight: bold;
+        text-shadow: 10px 10px 10px black;
+        background-color: aqua;
+        background: url("img/home/360_F_651499051_tQQimfoC1v8z8cD7m0mQjXElxJrMFppt.jpg");
+        background-repeat: no-repeat;
+        color:  white;
+        border-radius: 20px 20px;
+        border: 5px  solid black;
+        box-shadow: 7px 7px 20px black;
+    }
+    .quote4{
+        max-width: 650px;
+        animation: quoteAnimation 8s infinite ease-in-out;
+        margin: 0 0 ;
+        padding: 30px 30px;
+        float: left;
+        font-size: 45px;
+        font-weight: bold;
+        text-shadow: 10px 10px 10px black;
+        background-color: aqua;
+        background: url("img/home/home.png");
+        background-repeat: no-repeat;
+        color:  white;
+        border-radius: 20px 20px;
+        border: 5px  solid black;
+        box-shadow: 7px 7px 20px black;
+    }
     .card1{
         margin: 10px 10px;
         width: 40%;
@@ -198,10 +232,13 @@ crossorigin="anonymous"></script>
         background-repeat: no-repeat;
         background-position: center;  
     }
+    .lm{
+        margin: 0px 81px;
+    }
 </style>
 <body>
     <div class="home_img_container">
-        <nav class="navbar navbar-expand-lg text-bg-secondary">
+        <nav class="navbar navbar-expand-lg nav-color">
             <div class="container-fluid">
               <a class="navbar-brand" href="index.html"><img src="./img/img1.png" height="70px" img-bg-warning ></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -231,7 +268,7 @@ crossorigin="anonymous"></script>
             <div class="container">
             <div class="row justify-content-center align-items-start">
                 <div class="col-md-6 left text-start mt-5">
-                    <h1 style="font-family:'Times New Roman', Times, serif;" class="start">LET'S START THE FITNESS JOURNEY!</h1>
+                    <i><h1 style="font-family:'Times New Roman', Times, serif;" class="start">LET'S START THE FITNESS JOURNEY!</h1></i>
                 </div>
             </div>
             </div><br/><br/><br/><br/><br/>
@@ -242,13 +279,15 @@ crossorigin="anonymous"></script>
                     </div>
             </div>
             </div>
-    </div><br/>
+    </div><hr/>
     <section class="home_content q div-color1">
         <div class="container">
             <div >
             <figure class="text-center">
                 <blockquote class="blockquote">
-                  <p class="quote">"It's Your Workout: Your Time.Your Body. Own It."</p>
+                <p class="quote">
+                    "It's Your Workout: Your Time.Your Body. Own It."
+                </p>
                 </blockquote>
               </figure>
               </div>
@@ -271,6 +310,24 @@ crossorigin="anonymous"></script>
             </figure>
             </div>
             </div>
+            <div class="container">
+                <div >
+                <figure class="text-center">
+                    <blockquote class="blockquote">
+                        <p class="quote3">"Some people want it to happen, some wish it would happen, others make it happen."</p>
+                    </blockquote>
+                </figure>
+                </div>
+                </div>
+            <div class="container">
+                <div>
+                <figure class="text-center">
+                    <blockquote class="blockquote">
+                        <p class="quote4">"Our bodies are our gardens, our wills are our gardeners."</p>
+                    </blockquote>
+                </figure>
+                </div>
+            </div>
     </section><br/>
     <div class="div-color">
     <h1 class="text-center"><u><b>READY</b></u></h1>
@@ -282,7 +339,8 @@ crossorigin="anonymous"></script>
         <div class="card-img-overlay">
           <img src="./icons/home/bookmark-white.png" height="35px" class="bookmark-white" id="bookmark" onclick="toggleBookmark()"/>
           <h1 class="card-title">FOR BOYS</h1>
-          <a href="#" class="btn btn-color">Learn More</a>
+          <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+          <a href="#" class="btn btn-color lm">Learn More</a>
         </div>
       </div>
     <div class="card card2 text-bg-dark">
@@ -290,7 +348,8 @@ crossorigin="anonymous"></script>
         <div class="card-img-overlay">
             <img src="./icons/home/bookmark-white.png" height="35px" class="bookmark-white" id="bookmark1" onclick="toggleBookmark1()"/>
             <h1 class="card-title">FOR GIRLS</h1>
-            <a href="#" class="btn btn-color">Learn More</a>
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <a href="#" class="btn btn-color lm">Learn More</a>
         </div>
     </div>
     <div class="card card3 text-bg-dark">
@@ -298,7 +357,8 @@ crossorigin="anonymous"></script>
         <div class="card-img-overlay">
             <img src="./icons/home/bookmark-white.png" height="35px" class="bookmark-white" id="bookmark2" onclick="toggleBookmark2()"/>
             <h1 class="card-title">YOGA</h1>
-            <a href="#" class="btn btn-color">Learn More</a>
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <a href="#" class="btn btn-color lm">Learn More</a>
         </div>
     </div>
     <div class="card card4 text-bg-dark">
@@ -306,7 +366,8 @@ crossorigin="anonymous"></script>
         <div class="card-img-overlay">
             <img src="./icons/home/bookmark-white.png" height="35px" class="bookmark-white" id="bookmark3" onclick="toggleBookmark3()"/>
             <h1 class="card-title">GYM</h1>
-            <a href="#" class="btn btn-color">Learn More</a>
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <a href="#" class="btn btn-color lm">Learn More</a>
         </div>
     </div>
     </div>
@@ -326,7 +387,7 @@ crossorigin="anonymous"></script>
                 <p class="fs-5">Good nutrition is an essential part of any fitness plan. Our registered dietitians will work with you to create a personalized nutrition plan that fits your lifestyle and dietary needs. Whether you're looking to lose weight, build muscle, or improve your overall health, our nutrition counseling services will help you make informed decisions about the foods you eat.</p>
             </section>
         </div>
-    </div>
+    </div><br/>
     <div class="mission">
     <b><h2 class="text-center text-bg-warning">Our Mission</h2></b>
     <br/><p class="text-center p1 fs-5">"Our mission is to empower individuals to reach their full potential through fitness and nutrition."</p>
