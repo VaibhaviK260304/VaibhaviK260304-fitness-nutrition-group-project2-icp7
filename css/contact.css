@@ -15,6 +15,15 @@ background-repeat: no-repeat;
 height: 600px;
 
 }
+.conatct-form-info{
+    background-image: url("./../img/contact-page/img7.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    margin-top: 20px;
+    }
+
+
 .contactform{
     position: relative;
     background-color: #fff;
@@ -52,7 +61,7 @@ span{
 .contactText{
      margin-left: 50px;
     color: black;
-    margin-top: 134px;
+    margin-top: 150px;
     font-size: 32px;
     font-family: Arial, Helvetica, sans-serif;
 }
