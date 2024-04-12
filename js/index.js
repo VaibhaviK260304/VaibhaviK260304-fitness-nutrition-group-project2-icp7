@@ -47,3 +47,15 @@ function toggleBookmark3()
       bookmark3.src = "./icons/home/bookmark-white.png";
     }
 }
+
+function toggleDescription(button) {
+  var description = button.previousElementSibling;
+  if (description.style.display === "none") {
+    description.style.display = "block";
+    button.textContent = "Hide Description";
+  } else {
+    description.style.display = "none";
+    button.textContent = "Show Description";
+
+  }
+}
