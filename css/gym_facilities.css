@@ -10,18 +10,26 @@ a {
 
 .gym-banner-container {
     width: 100%;
-    height: 700px;
+    height: 800px;
     position: relative;
-    background-image: url('./../img/gym-facilities-page/gym-banner2.jpg');
+    /* margin-bottom: 150px; */
+    /* background-image: url('./../img/gym-facilities-page/gym-banner2.jpg');
     background-repeat: no-repeat;
-    background-size: cover !important;
+    background-size: cover !important; */
+}
+
+.gym-banner-container img {
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
 }
 
 .gym-banner-container .container {
+    width: 90vw;
     color: #fff;
     position: absolute;
-    top: 20%;
-    left: 15%;
+    top: 30%;
+    left: 10%;
     z-index: 1;
 }
 
@@ -30,17 +38,20 @@ a {
     display: block;
     font-size: 80px;
     margin-bottom: 10px;
-    opacity: 0.7;
+    transition: all .35s ease-in-out;
+    /* opacity: 0.7; */
 
 }
 
 .gym-banner-container .container p {
     width: 100%;
+    height: fit-content;
     display: block;
     color: #fff;
     margin-bottom: 50px;
     font-size: 20px;
     opacity: 0.7;
+    transition: all .35s ease-in-out;
 
 }
 
@@ -48,46 +59,102 @@ a {
     height: 70px;
     line-height: 70px;
     display: inline-block;
+    width: fit-content;
     padding: 0 50px;
+    border-radius: 4px;
     background: gold;
     text-decoration: none;
     font-weight: bold;
     color: #000;
     transition: all .35s ease-in-out;
     position: relative;
+    cursor: pointer;
+}
+.gym-banner-container .container a:hover {
+    text-decoration: none;
+    transition: all .15s ease-in-out;
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 1199px) {
+    .side-content h2 {
+        font-size: 40px;
+    }
+    .gym-banner-container{
+        height: 70vh;
+    }
+    .gym-banner-container .container {
+        top: 20%;
+        left: 10%;
+    }
+
+    .gym-banner-container .container h1 {
+        font-size: 40px;
+    }
+    .gym-banner-container .container p {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    .gym-banner-container .container a {
+        height: 50px;
+        line-height: 50px;
+        padding: 0 30px;
+
+    }
 }
 
 .gym-content-section {
     width: 100%;
     padding: 100px 0;
 }
+
 .side-content h6 {
     width: 100%;
+    color: #fff;
     font-size: 19px;
 }
+
 .side-content h1 {
     width: 100%;
     font-size: 40px;
     color: gold;
 }
-@media screen and (max-width: 1199px){
-.side-content h2 {
-    font-size: 40px;
-}}
+.side-content p{
+    color: #fff;
+    opacity: 0.9;
+}
+
+@media screen and (max-width: 1199px) {
+    .side-content h2 {
+        font-size: 40px;
+    }
+}
+
 .custom-button {
     height: 70px;
     line-height: 70px;
     background: gold;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
+    transition: all .35s ease-in-out;
     letter-spacing: 1px;
     overflow: hidden;
-    box-shadow: 2px  4px 6px rgba(0,0,0,.2);
-
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    border: none;
 }
-.side-image.full-right {
+
+.custom-button:hover {
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all .35s ease-out;
+    transform: scale(1.05);
+}
+
+.side-image .full-right {
     float: left;
 }
+
 .wow.fade.animated {
     opacity: 1;
 }
@@ -95,6 +162,7 @@ a {
 .side-content.left {
     padding-right: 20%;
 }
+
 .side-image {
     width: 100%;
     display: flex;
@@ -103,9 +171,99 @@ a {
     margin: 0;
     position: relative;
 }
+
+.side-image img {
+    object-fit: cover;
+    width: 100%;
+}
+
 .side-timetable li b {
     font-weight: 500;
     padding-left: 20px;
     margin-left: auto;
     color: gold;
+}
+#daily-routine{
+    position: absolute;
+    
+}
+
+@media screen and (max-width: 768px){
+    .gym-banner-container{
+        height:  60vh;
+    }
+
+    #daily-routine{
+        position: relative;
+        margin: auto;
+
+    }
+
+}
+@media screen and (max-width: 600px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+    .gym-banner-container{
+        height:  30vh;
+    }
+    .gym-banner-container .container {
+        width: 90vw;
+        font-size: small;
+        top: 10%;
+        left: 5%;
+    }
+
+    .gym-banner-container .container p {
+        font-size: smaller;
+        margin-bottom: 20px;
+    }
+
+    .gym-banner-container .container h1 {
+        font-size: large;
+    }
+
+    .side-content {
+        padding: 1rem;
+    }
+    #daily-routine{
+        position: relative;
+        margin: auto;
+       
+    }
+    .gym-banner-container .container a {
+        font-size: small;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 15px;
+    }
+    .card-footer h2{
+        font-size: 22px;
+    }
+}
+
+@keyframes roll {
+    0% {
+        transform: rotate(0);
+    }
+    10%{
+        left: 150px;border-radius: 50%;
+        transition: all .55s ease-out;
+    }
+    100% {
+        transform: rotate(360deg);
+        border-radius: 90%;
+
+    }
+
+}
+
+.animation {
+    animation: roll 1s infinite;
+    transition: all .55s ease-out;
 }
