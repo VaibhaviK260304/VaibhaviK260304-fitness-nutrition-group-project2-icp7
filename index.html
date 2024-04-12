@@ -233,6 +233,14 @@ crossorigin="anonymous"></script>
     .p{
         color: antiquewhite;
     }
+    .expert p {
+    display: none;
+    }
+    .expert{
+        display: block;
+        margin: 10px 10px;
+    }
+
     @media (max-width: 1000px) {
     .lm,.card {
         margin: 0 auto;
@@ -400,8 +408,35 @@ crossorigin="anonymous"></script>
         <p class="text-center p4 fs-5"><br/>"We believe that fitness and nutrition are essential components of a healthy and fulfilling life, and we are dedicated to helping our clients make positive changes that will last a lifetime."</p>
         <p class="text-center p5 fs-5"><br/>"Our mission is to help our clients build strength, confidence, and resilience through fitness and nutrition, and to empower them to live their best lives."</p>
     <br/></div>
-
-    
+    <div>
+        <h1 class="text-center text-bg-warning">OUR EXPERTS</h1>
+    <section class="flex-wrap d-flex ">
+    <div class="d-flex justify-content-around flex-wrap">
+    <div class="expert mx-5 justify-content-around">
+        <img src="./img/home/trainer1.jpg" height="200px" alt="Expert Name">
+        <h3>Guhayavarman</h3>
+        <p class=" fs-6">Guhayavarman - Chennai,<br/>Tamil Nadu : Internationally<br/>Certified Personal Trainer<br/> and Corrective Functional<br/>ResistanceProfessional Expert<br/>Private Fitness Coach in<br/>Chennai.Specializing in Fitness<br/>Science and Nutrition.</p>
+        <button class="btn btn-color" id="button" onclick="toggleDescription(this)">Show Description</button>
+    </div>
+    </div><hr/>
+    <div>
+    <div class="expert mx-5 justify-content-around">
+        <img src="./img/home/trainer2.webp" height="200px" alt="Expert Name">
+        <h3>Manikandan</h3>
+        <p>Manikandan - chennai :<br/>Fitness enthusiast with 9<br/>years of experience in health<br/>and fitness. Successful at<br/>designing sessions to match<br/>trainee skills and learning levels<br/>based on biomechanic<br/>approaches across countries.</p>
+        <button class="btn btn-color" id="button" onclick="toggleDescription(this)">Show Description</button>
+    </div>
+    </div><hr/>
+    <div>
+    <div class="expert mx-5 justify-content-around">
+        <img src="./img/home/trainer3.webp" height="200px" alt="Expert Name">
+        <h3>Eupho</h3>
+        <p>Eupho - Professional weight-<br/>loss coach, transforming 100s<br/>of individuals, if you are looking<br/>for fun ways to have a healthy<br/>body, this is ur spot! Very<br/>passionate about handling<br/>students and can give students<br/>a fun filled experience <br/>throughout their weightloss regime.</p>
+        <button class="btn btn-color" id="button" onclick="toggleDescription(this)">Show Description</button>
+    </div>
+    </div>
+</section></div>
+</div>
 <footer>
     <div class="footer-container">
         <div class="footer-column">
@@ -412,8 +447,8 @@ crossorigin="anonymous"></script>
             <h3>Services</h3>
             <ul>
                 <li><a href="/personal-training">Personal Training</a></li>
-                <li><a href="/group-fitness-classes">Group Fitness Classes</a></li>
-                <li><a href="/nutrition-counseling">Nutrition Counseling</a></li>
+                <li><a href="./pages/gym_facilities.html">Gym Facility</a></li>
+                <li><a href="./pages/guide_page.html">Nutrition Counseling</a></li>
             </ul>
         </div>
         <div class="footer-column">
