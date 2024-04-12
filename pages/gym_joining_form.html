@@ -4,31 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gym Joining Form</title>
+    <title>Gym Joining Application</title>
+    <link rel="stylesheet" href="./../css/style.css">
+    <script src="./../js/style.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
+            background: rgb(108,108,108);
+            background: radial-gradient(circle, rgba(108,108,108,1) 34%, rgba(1,1,1,1) 100%);
             margin: 0;
             padding: 0;
         }
+
         .container {
-            max-width: 600px;
+            vertical-align: middle;
+            max-width: 80%;
             margin: 50px auto;
             background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             padding: 30px;
         }
-        h2 {
+
+        h1 {
+            font-family: fantasy;
+            letter-spacing: 1px;
             text-align: center;
             color: #333;
         }
+
+        form {
+            transition: all 0.4s ease;
+        }
+
         label {
             font-weight: bold;
             color: #555;
         }
-        input[type="text"], input[type="email"], input[type="tel"],select, textarea {
+        hr{
+            border: 2px solid gray;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
             width: 100%;
             padding: 10px;
             margin: 8px 0;
@@ -36,22 +61,27 @@
             border-radius: 4px;
             box-sizing: border-box;
         }
-        input[type="number"], input[type="date"]{
+
+        input[type="number"],
+        input[type="date"] {
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 4px;
             margin-left: 5px;
             box-sizing: border-box;
         }
+
         input[type="checkbox"] {
             display: inline-block;
             vertical-align: middle;
             margin-right: 5px;
 
         }
-        .med-condition label{
-            margin-right: 20px;
+
+        .med-condition , input[type="checkbox"]{
+            vertical-align: middle;
         }
+        
         input[type="submit"] {
             background-color: gold;
             color: black;
@@ -64,25 +94,69 @@
             cursor: pointer;
             width: 30%;
         }
+
         input[type="submit"]:hover {
             background-color: rgb(234, 199, 0);
             transition: all .35s ease-out;
             transform: scale(1.05);
         }
+
         .form-group {
             margin-bottom: 20px;
         }
+
         .radio-group label {
             margin-right: 20px;
+        }
+        @media screen and (max-width: 639px) {
+            .container{
+                max-width: 100%;   
+                border-radius: 0%;
+                margin: 0;   
+            }
+           label, input{
+            font-size: 13px;
+           }
         }
     </style>
 
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg nav-color">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="./../img/img1.png" height="70px" img-bg-warning></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./about_page.html" id="about" onmouseover="about()">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./contact_page.html" id="contact"
+                            onmouseover="contact()">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./guide_page.html" id="guide" onmouseover="guide()">Guide</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./rating&review.html" id="feedback"
+                            onmouseover="feedback()">Feedback</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./../registration.html" id="login" onmouseover="login()">LOG
+                            IN</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div class="container">
-        <h2>Gym Joining Form</h2>
-        <form id="registrationForm">
+        <h1>Gym Joining Application</h1>
+        <form class="mt-5" id="registrationForm" onsubmit="return confirmation(message)">
             <div class="form-group">
                 <label for="fullname">Full Name:</label>
                 <input type="text" id="fullname" placeholder="Enter your name" name="fullname" required>
@@ -91,7 +165,7 @@
             <h3>Contact Details </h3>
             <div class="form-group">
                 <label for="email">Email:</label>
-                <input type="email" id="email" placeholder="Enter your email" name="email" required>
+                <input type="email" id="email" placeholder="Enter your email" name="email" required />
             </div>
             <div class="form-group">
                 <label for="emergencyContact">Mobile Number:</label>
@@ -99,7 +173,7 @@
             </div>
             <hr>
             <h3>Membership Package </h3>
-            <select name="membershipType" id="membershipType">
+            <select name="membershiptype" id="membershiptype">
                 <option value="" disabled selected>Select Membership Type</option>
                 <option value="Diamond">Diamond Package</option>
                 <option value="Gold">Gold Package</option>
@@ -141,12 +215,12 @@
                     <label for="address">Address:</label>
                     <input type="text" id="address" name="address">
                 </div>
-    
+
                 <div class="form-group">
                     <label for="city">City:</label>
                     <input type="text" id="city" name="city">
                 </div>
-    
+
                 <div class="form-group">
                     <label for="state">State:</label>
                     <input type="text" id="state" name="state">
@@ -165,33 +239,34 @@
                 <label for="Lowbloodpresure">Low blood presure</label>
                 <input type="checkbox" id="asthma" name="medical-condition" value="asthma">
                 <label for="asthma">Asthma</label>
-                <input type="checkbox" id="allergies" name="medical-condition" value="allergies">
+                <input type="checkbox" id="allergies" name="medical-condition" value="Allergies">
                 <label for="allergies">Allergies</label>
-                <input type="checkbox" id="chestpains" name="medical-condition" value="chestpains">
+                <input type="checkbox" id="chestpains" name="medical-condition" value="ChestPains">
                 <label for="chestpains">Chest pains</label>
             </div>
             <div class="form-group">
                 <label for="addtionalmedicalnotes">Addtional Medical Notes</label><br>
-                <textarea name="addtionalmedicalnotes" id="addtionalmedicalnotes" cols="30" rows="10"></textarea>
+                <textarea name="addtionalmedicalnotes" id="addtionalmedicalnotes" cols="15" rows="5"></textarea>
             </div>
             <input type="submit" value="Join">
         </form>
     </div>
     <script>
-        function validateForm() {
-            const fullname = document.getElementById("fullname").value;
-            const email = document.getElementById("email").value;
-            const gender = document.querySelector('input[name="gender"]:checked');
-            const dob = document.getElementById("dob").value;
-            const healthInsurance = document.querySelector('input[name="healthInsurance"]:checked');
-            const address = document.getElementById("address").value;
-            const city = document.getElementById("city").value;
-            const state = document.getElementById("state").value;
-            const zipcode = document.getElementById("zipcode").value;
-            const emergencyContact = document.getElementById("emergencyContact").value;
+        function confirmation(message) {
+            message.preventDefault();
+            const form = document.getElementById("registrationForm");
+            const fullname = form.elements["fullname"].value;
+            const email = form.elements["email"].value;
+            const gender = form.querySelector('input[name="gender"]:checked');
+            const dob = form.elements["dob"].value;
+            const healthInsurance = form.querySelector('input[name="healthInsurance"]:checked');
+            const medicalCondition = form.querySelector('input[name="medical-condition"]:checked');
+            const address = form.elements["address"].value;
+            const city = form.elements["city"].value;
+            const state = form.elements["state"].value;
 
-            if (!fullname || !email || !gender || !dob || !healthInsurance || !address || !city || !state || !zipcode || !emergencyContact) {
-                console.log("Please fill in all required fields.");
+            if (!fullname || !email || !gender || !dob || !healthInsurance || !medicalCondition || !address || !city || !state) {
+                alert("Please fill in all required fields.");
                 return false;
             }
 
@@ -200,15 +275,46 @@
             console.log("Gender: " + gender.value);
             console.log("Date of Birth: " + dob);
             console.log("Health Insurance: " + healthInsurance.value);
+            console.log("Medical Condition: " + medicalCondition.value);
             console.log("Address: " + address);
             console.log("City: " + city);
             console.log("State: " + state);
-            console.log("Zip Code: " + zipcode);
-            console.log("Emergency Contact Number: " + emergencyContact);
-
+            alert(`Welcome ${fullname}, Thanks for Joining Us`);
             return true;
         }
     </script>
+
+<footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <p>We are a fitness site dedicated to helping you reach your health and wellness goals. Our team of certified trainers and nutritionists are here to support you every step of the way.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="/personal-training">Personal Training</a></li>
+                    <li><a href="/group-fitness-classes">Group Fitness Classes</a></li>
+                    <li><a href="/nutrition-counseling">Nutrition Counseling</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p>Email: info@fitnesssite.com<br>Phone: (123) 456-7890<br>Address: 123 Main St, Anytown USA 12345</p>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/fitnesssite">Facebook</a></li>
+                    <li><a href="https://www.twitter.com/fitnesssite">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/fitnesssite">Instagram</a></li>
+                </ul>
+            </div>
+        </div><br/>
+        <div class="footer-copyright">
+            <p>&copy; 2023 Fitness Site. All rights reserved.</p>
+        </div>
+</footer>
 </body>
 
 </html>
