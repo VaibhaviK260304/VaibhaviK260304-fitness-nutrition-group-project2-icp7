@@ -1,9 +1,15 @@
 // submit
 
 function submit(){
+    
     let name = document.getElementById("name");
+    console.log(name.value);
+
     let number = document.getElementById("number");
+    console.log(number.value);
+    
     let email = document.getElementById("email");
+    console.log(email.value);
   
 
     if(name.value == "")
