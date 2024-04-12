@@ -12,6 +12,7 @@
             margin: 0;
             padding: 0;
         }
+
         .container {
             max-width: 600px;
             margin: 50px auto;
@@ -20,15 +21,22 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             padding: 30px;
         }
+
         h2 {
             text-align: center;
             color: #333;
         }
+
         label {
             font-weight: bold;
             color: #555;
         }
-        input[type="text"], input[type="email"], input[type="tel"],select, textarea {
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
             width: 100%;
             padding: 10px;
             margin: 8px 0;
@@ -36,22 +44,27 @@
             border-radius: 4px;
             box-sizing: border-box;
         }
-        input[type="number"], input[type="date"]{
+
+        input[type="number"],
+        input[type="date"] {
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 4px;
             margin-left: 5px;
             box-sizing: border-box;
         }
+
         input[type="checkbox"] {
             display: inline-block;
             vertical-align: middle;
             margin-right: 5px;
 
         }
-        .med-condition label{
+
+        .med-condition label {
             margin-right: 20px;
         }
+
         input[type="submit"] {
             background-color: gold;
             color: black;
@@ -64,14 +77,17 @@
             cursor: pointer;
             width: 30%;
         }
+
         input[type="submit"]:hover {
             background-color: rgb(234, 199, 0);
             transition: all .35s ease-out;
             transform: scale(1.05);
         }
+
         .form-group {
             margin-bottom: 20px;
         }
+
         .radio-group label {
             margin-right: 20px;
         }
@@ -82,7 +98,7 @@
 <body>
     <div class="container">
         <h2>Gym Joining Form</h2>
-        <form id="registrationForm">
+        <form id="registrationForm" onsubmit="return confirmation(message)">
             <div class="form-group">
                 <label for="fullname">Full Name:</label>
                 <input type="text" id="fullname" placeholder="Enter your name" name="fullname" required>
@@ -91,7 +107,7 @@
             <h3>Contact Details </h3>
             <div class="form-group">
                 <label for="email">Email:</label>
-                <input type="email" id="email" placeholder="Enter your email" name="email" required>
+                <input type="email" id="email" placeholder="Enter your email" name="email" required />
             </div>
             <div class="form-group">
                 <label for="emergencyContact">Mobile Number:</label>
@@ -99,7 +115,7 @@
             </div>
             <hr>
             <h3>Membership Package </h3>
-            <select name="membershipType" id="membershipType">
+            <select name="membershiptype" id="membershiptype">
                 <option value="" disabled selected>Select Membership Type</option>
                 <option value="Diamond">Diamond Package</option>
                 <option value="Gold">Gold Package</option>
@@ -141,12 +157,12 @@
                     <label for="address">Address:</label>
                     <input type="text" id="address" name="address">
                 </div>
-    
+
                 <div class="form-group">
                     <label for="city">City:</label>
                     <input type="text" id="city" name="city">
                 </div>
-    
+
                 <div class="form-group">
                     <label for="state">State:</label>
                     <input type="text" id="state" name="state">
@@ -165,9 +181,9 @@
                 <label for="Lowbloodpresure">Low blood presure</label>
                 <input type="checkbox" id="asthma" name="medical-condition" value="asthma">
                 <label for="asthma">Asthma</label>
-                <input type="checkbox" id="allergies" name="medical-condition" value="allergies">
+                <input type="checkbox" id="allergies" name="medical-condition" value="Allergies">
                 <label for="allergies">Allergies</label>
-                <input type="checkbox" id="chestpains" name="medical-condition" value="chestpains">
+                <input type="checkbox" id="chestpains" name="medical-condition" value="ChestPains">
                 <label for="chestpains">Chest pains</label>
             </div>
             <div class="form-group">
@@ -178,20 +194,21 @@
         </form>
     </div>
     <script>
-        function validateForm() {
-            const fullname = document.getElementById("fullname").value;
-            const email = document.getElementById("email").value;
-            const gender = document.querySelector('input[name="gender"]:checked');
-            const dob = document.getElementById("dob").value;
-            const healthInsurance = document.querySelector('input[name="healthInsurance"]:checked');
-            const address = document.getElementById("address").value;
-            const city = document.getElementById("city").value;
-            const state = document.getElementById("state").value;
-            const zipcode = document.getElementById("zipcode").value;
-            const emergencyContact = document.getElementById("emergencyContact").value;
+        function confirmation(message) {
+            message.preventDefault();
+            const form = document.getElementById("registrationForm");
+            const fullname = form.elements["fullname"].value;
+            const email = form.elements["email"].value;
+            const gender = form.querySelector('input[name="gender"]:checked');
+            const dob = form.elements["dob"].value;
+            const healthInsurance = form.querySelector('input[name="healthInsurance"]:checked');
+            const medicalCondition = form.querySelector('input[name="medical-condition"]:checked');
+            const address = form.elements["address"].value;
+            const city = form.elements["city"].value;
+            const state = form.elements["state"].value;
 
-            if (!fullname || !email || !gender || !dob || !healthInsurance || !address || !city || !state || !zipcode || !emergencyContact) {
-                console.log("Please fill in all required fields.");
+            if (!fullname || !email || !gender || !dob || !healthInsurance || !medicalCondition || !address || !city || !state) {
+                alert("Please fill in all required fields.");
                 return false;
             }
 
@@ -200,12 +217,11 @@
             console.log("Gender: " + gender.value);
             console.log("Date of Birth: " + dob);
             console.log("Health Insurance: " + healthInsurance.value);
+            console.log("Medical Condition: " + medicalCondition.value);
             console.log("Address: " + address);
             console.log("City: " + city);
             console.log("State: " + state);
-            console.log("Zip Code: " + zipcode);
-            console.log("Emergency Contact Number: " + emergencyContact);
-
+            alert(`Welcome ${fullname}, Thanks for Joining Us`);
             return true;
         }
     </script>
