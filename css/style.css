@@ -1,3 +1,7 @@
+/*nav-color*/
+.nav-color{
+    background-color: rgb(199, 176, 44);
+}
 /*footer css*/
 footer {
     background-color: #333;
@@ -8,7 +12,6 @@ footer {
     align-items: center;
     width: 100%;
 }
-
 .footer-container {
     display: flex;
     justify-content: space-between;
