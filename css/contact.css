@@ -6,9 +6,15 @@
 body{
     background-color: rgb(1, 1, 14);
     font-family: 'Roboto',sans-serif;
-    color: white;
+    
 }
+.contact-img{
+background-image: url("./../img/contact-page/img6.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+height: 600px;
 
+}
 .contactform{
     position: relative;
     background-color: rgb(243, 238, 238);
@@ -26,29 +32,29 @@ body{
 
 .head{
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 span{
     color: gold;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
 .contactPage{
-    display: flex;
-    justify-content: center;
-
+    display: inline-block;
+    justify-content: left;
+    
 }
 
 .contactText{
-    margin-left: 25px;
-    color: gold;
+     margin-left: 50px;
+    color: black;
     margin-top: 134px;
     font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.contactPage img{
-    width: 60%;
-    margin-left: 33px;
-}
+
 
 .contactUs{
     text-align: center;
