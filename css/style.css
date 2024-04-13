@@ -2,8 +2,8 @@
 /*.nav-color{
     background-color: rgb(199, 176, 44);
 }*/
-.nav-color{
-
+.logo{
+    border-radius: 50%;
 }
 /*footer css*/
 footer {
