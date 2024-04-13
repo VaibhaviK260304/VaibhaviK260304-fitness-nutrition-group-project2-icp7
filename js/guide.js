@@ -31,7 +31,9 @@ function WorkoutPlan(age) {
     if (age >= 20 && age <= 30)
      {
         const Recommendation=document.getElementById("Recommendation");
-        Recommendation.innerText="Hello Rushi";
+        if (Weight>=30 && Weight<=50) {
+            const Recommendation=document.getElementById("Recommendation")
+        }
 
     }
 
