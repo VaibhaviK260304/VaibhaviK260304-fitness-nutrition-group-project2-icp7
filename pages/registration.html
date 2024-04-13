@@ -80,10 +80,17 @@ body {
     function data(){
 
    
-    var a=document.getElementById("n1").value;
-    var b=document.getElementById("n2").value;
-    var c=document.getElementById("n3").value;
-    var d=document.getElementById("n4").value;
+    let a=document.getElementById("n1");
+    console.log(n1.value);
+
+    let b=document.getElementById("n2");
+    console.log(n2.value);
+
+    let c=document.getElementById("n3");
+    console.log(n3.value);
+    
+    let d=document.getElementById("n4");
+    console.log(n4.value);
 
     if(a==""||b==""||c==""||d=="")
     {
@@ -116,34 +123,37 @@ body {
     </script>
   <nav class="navbar navbar-expand-lg text-bg-secondary nav-color">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"><img src="./../img/logo.jpg" class="logo" height="70px" img-bg-warning ></a>
+      <a class="navbar-brand" href="./../index.html"><img src="./../img/logo.jpg" class="logo" height="70px" img-bg-warning ></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active fs-5"  href="./pages/about_page.html" id="about" onmouseover="about()">ABOUT</a>
+            <a class="nav-link active fs-5"  href="./../index.html" id="index" onmouseover="index()">HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active fs-5" href="./pages/contact_page.html" id="contact" onmouseover="contact()">CONTACT</a>
+            <a class="nav-link active fs-5"  href="about_page.html" id="about" onmouseover="about()">ABOUT</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active fs-5" href="./pages/guide_page.html" id="guide" onmouseover="guide()">GUIDE</a>
+            <a class="nav-link active fs-5" href="contact_page.html" id="contact" onmouseover="contact()">CONTACT</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active fs-5" href="" id="feedback" onmouseover="feedback()">FEEDBACK</a>
+            <a class="nav-link active fs-5" href="guide_page2.html" id="guide" onmouseover="guide()">GUIDE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fs-5" href="feedback.html" id="#" onmouseover="feedback()">FEEDBACK</a>
           </li>
           <li class="nav-item log">
-            <a class="nav-link active fs-5" href="./pages/login_page.html" id="login" onmouseover="login()">LOGIN</a>
+            <a class="nav-link active fs-5" href="login_page.html" id="login" onmouseover="login()">LOGIN</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active fs-5" href="./pages/registration.html" id="registration" onmouseover="registration()">REGISTRATION</a>
+            <a class="nav-link active fs-5" href="registration.html" id="registration" onmouseover="registration()">REGISTRATION</a>
           </li>
         </ul>
       </div>
     </div>
-        </nav>
+    </nav>
         <div class="container">
           <form onsubmit="return data()">
               <h2>Registration Form</h2>
