@@ -46,76 +46,74 @@
           </div>
         </div>
     </nav>
-        <div class="main-div main-title"><b><h2 class="title">Ideal weight calculator (Men)</h2></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <div class="main-div main-title"><b><h2 class="title">Ideal weight calculator (Men)</h2></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-        <b><h2 class="title">Ideal weight calculator (Women)</h2></b></div>
-    <div class="main-div">   
-    <div class="container-box">
-        <h2>Enter Height in meters</h2>
-        <input type="text" placeholder="Enter height in m" class="input" id="no.1"/>
-        <p class="answer" id="ans"></p>
+    <b><h2 class="title">Ideal weight calculator (Women)</h2></b></div>
+<div class="main-div">   
+<div class="container-box">
+    <h2>Enter Height in meters</h2>
+    <input type="text" placeholder="Enter height in m" class="input" id="no.1"/>
+    <p class="answer" id="ans"></p>
 
-        <button type="button" class="btn-1" onclick="calculate()">
-            Calculate
-        </button>
+    <button type="button" class="btn-1" onclick="calculate()">
+        Calculate
+    </button>
 
-        <button type="button" class="btn-1" onclick="reset()">
-            Reset
-        </button>
-    </div>
-    <div class="container-box">
-        <h2>Enter Height in meters</h2>
-        <input type="text" placeholder="Enter height in m" class="input" id="no.1"/>
-        <p class="answer" id="ans"></p>
+    <button type="button" class="btn-1" onclick="reset()">
+        Reset
+    </button>
+</div>
+<div class="container-box">
+    <h2>Enter Height in meters</h2>
+    <input type="text" placeholder="Enter height in m" class="input" id="no.1"/>
+    <p class="answer" id="ans1"></p>
 
-        <button type="button" class="btn-1" onclick="calculate()">
-            Calculate
-        </button>
+    <button type="button" class="btn-1" onclick="calculate1()">
+        Calculate
+    </button>
 
-        <button type="button" class="btn-1" onclick="reset()">
-            Reset
-        </button>
-    </div>
+    <button type="button" class="btn-1" onclick="reset1()">
+        Reset
+    </button>
+</div>
 </div><br><br><br><br><br>
-    <script>
-        function calculate()
-        {
-            const input1=document.getElementById("no.1");
-            const area =  22 *(parseInt(input1.value))*2;
-        
-            const ansElement=document.getElementById("ans");
-        
-            ansElement.innerHTML = `Weight :  ${area} kgs`;
-        }
-        function reset()
-        {
-            const input1=document.getElementById("no.1");
-            const input2=document.getElementById("no.2");
-            const ansElement=document.getElementById("ans");
-            input1.value='';
-            ansElement.innerText='';
-        }
-        </script>
-    <script>
-        function calculate()
-        {
-            const input1=document.getElementById("no.1");
-            const area =  22 *(parseInt(input1.value)-0.1)*2;
-        
-            const ansElement=document.getElementById("ans");
-        
-            ansElement.innerHTML = `weight :  ${area} kgs`;
-        }
-        function reset()
-        {
-            const input1=document.getElementById("no.1");
-            const input2=document.getElementById("no.2");
-            const ansElement=document.getElementById("ans");
-            input1.value='';
-            ansElement.innerText='';
-        }
-    </script>
+<script>
+    function calculate()
+    {
+        const input1=document.getElementById("no.1");
+        const area =  22 *(parseInt(input1.value))*2;
+    
+        const ansElement=document.getElementById("ans");
+    
+        ansElement.innerHTML = `Weight :  ${area} kgs`;
+    }
+    function reset()
+    {
+        const input1=document.getElementById("no.1");
+        const input2=document.getElementById("no.2");
+        const ansElement=document.getElementById("ans");
+        input1.value='';
+        ansElement.innerText='';
+    }
+    function calculate1()
+    {
+        const input1=document.getElementById("no.1");
+        const area =  22 *(parseInt(input1.value)-0.1)*2;
+    
+        const ansElement=document.getElementById("ans1");
+    
+        ansElement.innerHTML = `weight :  ${area} kgs`;
+    }
+    function reset1()
+    {
+        const input1=document.getElementById("no.1");
+        const input2=document.getElementById("no.2");
+        const ansElement=document.getElementById("ans1");
+        input1.value='';
+        ansElement.innerText='';
+    }
+</script>
     <footer>
         <div class="footer-container">
             <div class="footer-column">
