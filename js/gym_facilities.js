@@ -1,6 +1,7 @@
 
 function showRoutine(){
     const  routine = document.getElementById("daily-routine");
+    routine.classList.remove("d-none");
     routine.classList.add("d-block");   
     setTimeout(() => {
         routine.classList.remove("d-block");
