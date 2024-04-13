@@ -190,6 +190,9 @@ a {
 .membership-packages .card{
     transition: all .3s ease;
 }
+.col-lg-4, .col-md-6{
+    padding: 0px 0px;
+}
 .membership-packages .card:hover{
     transform: translateY(-10px);
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
@@ -202,6 +205,13 @@ a {
 .card-footer a:hover{
     color: gold;
     text-decoration: none;
+}
+
+ .main-service:hover {
+    transition: all .3s ease-in-out;
+    transform: translateY(-10px);
+    background-color: #ffc36b;
+    color: white;
 }
 
 .gym-opening-hours-container{
@@ -258,12 +268,12 @@ align-items: center;
         font-size: 1rem;
     }
     .gym-banner-container{
-        height:  30vh;
+        height:  35vh;
     }
     .gym-banner-container .container {
         width: 90vw;
         font-size: small;
-        top: 10%;
+        top: 20%;
         left: 5%;
     }
 
@@ -273,7 +283,8 @@ align-items: center;
     }
 
     .gym-banner-container .container h1 {
-        font-size: large;
+        font-size: 20px;
+        margin-bottom: 5px;
     }
 
     .side-content {
