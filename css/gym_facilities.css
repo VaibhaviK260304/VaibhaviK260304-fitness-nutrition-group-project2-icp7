@@ -195,20 +195,34 @@ a {
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
 
 }
+.card-footer a{
+    text-decoration: none;
+    color: #fff;
+}
+.card-footer a:hover{
+    color: gold;
+    text-decoration: none;
+}
+
 .gym-opening-hours-container{
     background: rgb(255,255,255);
 background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0, 0, 0, 0.874) 70%), url('./../img/gym-facilities-page/gym-banner.jpg');
-height: 550px;
+height: 500px;
 background-size: cover;
 background-repeat: no-repeat;
-position: relative;
+display: flex;
+justify-content: right;
+align-items: center;
+/* position: relative; */
 }
 .gym-opening-hours{
-    top: 50%;
+    color: #fff;
+    margin-right: 50px;
+    /* top: 50%;
     right: 5%;
     transform: translate(-50%, -50%);
     color: #fff;
-    position: absolute;
+    position: absolute; */
 }
 .gym-opening-hours h3{
     font-size: 36px;
@@ -301,3 +315,4 @@ position: relative;
     animation: roll 1s infinite;
     transition: all .55s ease-out;
 }
+
