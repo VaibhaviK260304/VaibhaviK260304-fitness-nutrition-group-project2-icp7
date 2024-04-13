@@ -50,5 +50,4 @@ function registration(){
     document.getElementById("feedback").style.color="black";
     document.getElementById("login").style.color="black";
     document.getElementById("registration").style.color="rgb(20,253,30)";
-
 }
