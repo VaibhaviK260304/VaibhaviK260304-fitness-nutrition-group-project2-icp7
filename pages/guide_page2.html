@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/guide.css">
     <script src="/js/style.js"></script>
+    <script src="/js/guide.js"></script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -18,34 +19,35 @@
         crossorigin="anonymous"></script>
 
     <style>
-
-        h2{
+        h2 {
             text-align: center;
             margin-top: 25px;
             margin-left: 520px;
-                border: none;
-                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                background-color: chocolate;
-                width: 30%;
-                height: 45px;
-                color: white;
-                border-bottom-right-radius: 50px;
-                border-top-left-radius: 50px;
+            border: none;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: chocolate;
+            width: 30%;
+            height: 45px;
+            color: white;
+            border-bottom-right-radius: 50px;
+            border-top-left-radius: 50px;
         }
+
         .three-line {
             margin-top: 10px;
         }
-        .warming{
+
+        .warming {
             text-align: center;
             margin-top: 25px;
             margin-left: 520px;
-                
-                background-color: chocolate;
-                width: 30%;
-                height: 45px;
-                color: white;
-                border-bottom-right-radius: 50px;
-                border-top-left-radius: 50px;
+
+            background-color: chocolate;
+            width: 30%;
+            height: 45px;
+            color: white;
+            border-bottom-right-radius: 50px;
+            border-top-left-radius: 50px;
 
         }
 
@@ -58,7 +60,7 @@
         }
 
         @media screen and (max-width:768px) {
-            button{
+            button {
                 margin-top: 95px;
                 font-size: 11px;
                 width: 65px;
@@ -73,10 +75,10 @@
 
         }
 
-        @media screen and (max-width:768px){
-            .first{
-               height: 400px;
-              
+        @media screen and (max-width:768px) {
+            .first {
+                height: 400px;
+
             }
         }
 
@@ -88,8 +90,8 @@
             }
         }
 
-        @media screen and (max-width:768px){
-            .h1{
+        @media screen and (max-width:768px) {
+            .h1 {
                 font-size: 30px;
                 margin-top: -280px;
                 margin-left: 240px;
@@ -100,7 +102,7 @@
         @media screen and (max-width:600px) {
             h2 {
                 margin-left: 40px;
-                
+
                 background-color: chocolate;
                 width: 80%;
                 height: 45px;
@@ -110,8 +112,8 @@
             }
         }
 
-        @media screen and (max-width:768px){
-            h2{
+        @media screen and (max-width:768px) {
+            h2 {
                 margin-left: 270px;
                 width: 220px;
             }
@@ -130,8 +132,8 @@
             }
         }
 
-        @media screen and (max-width:768px){
-            .warming{
+        @media screen and (max-width:768px) {
+            .warming {
                 margin-left: 200px;
                 text-align: center;
                 margin-top: 20px;
@@ -146,13 +148,14 @@
         }
 
         @media screen and (max-width:600px) {
-            .warmup-img{
+            .warmup-img {
                 margin-left: 45px;
-               margin-bottom: 10px;
+                margin-bottom: 10px;
             }
         }
-        @media screen and (max-width:768px){
-            .warmup-img{
+
+        @media screen and (max-width:768px) {
+            .warmup-img {
                 margin-left: 10px;
                 margin-bottom: 15px;
             }
@@ -208,7 +211,9 @@
     <div class="row-btn">
 
         <a href="./food.html">
-            <button onclick="foodpage()" id="Foods">Nutrients</button></a>
+            <button onmousemove="movebtn()" id="Nutrient">Nutrients  ^ </button></a>
+
+            
 
         <a href="./fitness.html"> <button>Fitness</button></a>
 
@@ -269,52 +274,54 @@
 
 
         <b class="b">Examples</b><br>
-<ul>
-    <li>If you are a runner, your best warm-up is a light jog.
-    </li>
-    <li>If you are doing martial arts training a warm-up should also include a few light kicks and punches.</li>
-    <li>If you are doing bodyweight workouts basic body (neck, arms, torso, legs) rotations will get your blood flowing.</li>
-    <li>If you are about to lift weights, do a few lifts with very light weights.</li>
-</ul>
- 
- <img class="warmup-img" src="/img/guide-img/warup-1.jpg" alt="">
- <img class="warmup-img" src="/img/guide-img/warmup-2.jpg" alt="">
- <img class="warmup-img" src="/img/guide-img/warmup-3.jpg" alt="">
-</p> 
-</p>
+    <ul>
+        <li>If you are a runner, your best warm-up is a light jog.
+        </li>
+        <li>If you are doing martial arts training a warm-up should also include a few light kicks and punches.</li>
+        <li>If you are doing bodyweight workouts basic body (neck, arms, torso, legs) rotations will get your blood
+            flowing.</li>
+        <li>If you are about to lift weights, do a few lifts with very light weights.</li>
+    </ul>
 
-<footer>
-    <div class="footer-container">
-        <div class="footer-column">
-            <h3>About Us</h3>
-            <p>We are a fitness site dedicated to helping you reach your health and wellness goals. Our team of certified trainers and nutritionists are here to support you every step of the way.</p>
-        </div>
-        <div class="footer-column">
-            <h3>Services</h3>
-            <ul>
-                <li><a href="./pages/gym_facilities.html">Gym Facility</a></li>
-                <li><a href="./pages/guide_page.html">Nutrition Counseling</a></li>
-                <li><a href="/personal-training">Personal Training</a></li>
+    <img class="warmup-img" src="/img/guide-img/warup-1.jpg" alt="">
+    <img class="warmup-img" src="/img/guide-img/warmup-2.jpg" alt="">
+    <img class="warmup-img" src="/img/guide-img/warmup-3.jpg" alt="">
+    </p>
+    </p>
 
-            </ul>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <p>We are a fitness site dedicated to helping you reach your health and wellness goals. Our team of
+                    certified trainers and nutritionists are here to support you every step of the way.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="./pages/gym_facilities.html">Gym Facility</a></li>
+                    <li><a href="./pages/guide_page.html">Nutrition Counseling</a></li>
+                    <li><a href="/personal-training">Personal Training</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p>Email: info@fitnesssite.com<br>Phone: (123) 456-7890<br>Address: 123 Main St, Anytown USA 12345</p>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/fitness_fusion_club" id="img">Facebook</a></li>
+                    <li><a href="https://www.twitter.com/fitness_fusion_club" id="img1">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/fitness_fusion_club" id="img2">Instagram</a></li>
+                </ul>
+            </div>
+        </div><br />
+        <div class="footer-copyright">
+            <p>&copy; 2023 Fitness Site. All rights reserved.</p>
         </div>
-        <div class="footer-column">
-            <h3>Contact Us</h3>
-            <p>Email: info@fitnesssite.com<br>Phone: (123) 456-7890<br>Address: 123 Main St, Anytown USA 12345</p>
-        </div>
-        <div class="footer-column">
-            <h3>Follow Us</h3>
-            <ul>
-                <li><a href="https://www.facebook.com/fitness_fusion_club" id="img">Facebook</a></li>
-                <li><a href="https://www.twitter.com/fitness_fusion_club" id="img1">Twitter</a></li>
-                <li><a href="https://www.instagram.com/fitness_fusion_club" id="img2">Instagram</a></li>
-            </ul>
-        </div>
-    </div><br/>
-    <div class="footer-copyright">
-        <p>&copy; 2023 Fitness Site. All rights reserved.</p>
-    </div>
-</footer>
+    </footer>
 </body>
 
 </html>

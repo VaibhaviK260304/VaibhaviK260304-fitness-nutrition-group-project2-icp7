@@ -9,507 +9,304 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-  <script src="/js/guide.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="/css/guide.css">
+
   <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/guide.js"></script>
   <script src="/js/style.js"></script>
 
   <style>
-button{
-  margin-top: 10px;
-  width: 50px;
-}
+    .width {
+      height: 800px;
+    }
 
-@media screen and (max-width:600px) {
-  .h4{
-    font-size: 20px;
-    height: 60px;
-    text-align: center;
-    width: 85%;
-    margin-left: 35px;
-    margin-top: -60px;
-  }
-  .beginner-bk{
-    margin-left: -200px;
-  
-  }
-  .img-beg{
-    display: none;
-  }
-  @media screen and (max-width:600px){
-  h4{
-    font-size: 20px;
-    height: 60px;
-    text-align: center;
-    width: 85%;
-    margin-left: -50pxpx;
-    margin-top: -20px;
-  }
-}
+    .header {
+      width: 500px;
+      margin-left: 500px;
+    }
 
-  
-}
+    .breakfast {
+      margin-top: 100px;
+    }
 
+    .img {
+      height: 400px;
+    }
 
-    h1 {
+    .img-2 {
+      height: 400px;
+    }
 
-      text-align: center;
-      color: white;
-      margin-top: -450px;
-      font-size: 100px;
-      font-family: Georgia, 'Times New Roman', Times, serif;
+    .img-2:hover {
+      border-right: 5px solid black;
+      border-bottom: 5px solid black;
+      ;
+      height: 390px;
+      transition: 0.5s;
 
     }
 
-    .img-1 {
-      height: 500px;
-      width: 1536px;
-      margin-left: -8px
-    }
+    .img:hover {
 
-    select {
-      width: 250px;
-    }
-
-    .btn {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      height: 40px;
-    }
-
-    h4 {
-
-      text-align: center;
-      background-color: chocolate;
-      width: 50%;
-      height: 45px;
-
-      color: white;
-      margin-left: 380px;
-      border-bottom-right-radius: 50px;
-      border-top-left-radius: 50px;
-    }
-
-    form {
-      width: 80%;
-      margin-left: 10%;
+      border-left: 5px solid black;
+      border-bottom: 5px solid black;
+      
+      height: 390px;
+      transition: 0.5s;
 
     }
-
-    .Recomnd {
-      margin-left: -190px;
-      margin-right: 40px;
-      background-color: gray;
+    button{
+      height: 50px;
+      background-color: white;
+      border: none;
+      font-weight:lighter;
+    }
+    .btn{
       border: 1px solid black;
-      margin-top: 90px;
-    }
-
-    .beginners-wk {
-      background-color: white;
-      width: 460px;
-      margin-left: 200px;
-      border: 2px solid white;
-      border-radius: 10px;
-      /* border-bottom: 2px solid black ;
-        border-top : 2px solid black ; */
-    }
-
-    h6 {
-      font-weight: bold;
-      margin-left: 30px;
-    }
-
-    .img-beg {
-      margin-left: 400px;
-      margin-top: -700px;
-      border: 2px solid white;
-      border-radius: 10px;
-    }
-
-    .back {
-      background-color: #666666;
-    }
-
-    p {
-      text-align: left;
+      border-radius: 0px;
+      font-weight: lighter;
+      
       margin-left: 10px;
-      color: white;
     }
-
-    h5 {
-      color: white;
-      font-weight: bolder;
-      margin-left: 20px;
-      padding: 10px;
-    }
-
-    .intermediate {
-      /* background-image: url(/img/guide-img/intermediate.jpg); */
-      background-color: #666666;
-    }
-
-
-
-
-    .ul {
-      background-color: white;
-      width: 580px;
-      border-radius: 15px;
-      margin-left: 210px;
-    }
-
-    .img-updated {
-      height: 300px;
-      margin-top: -2200px;
-      margin-left: 700px;
-
-    }
-
-    .cable {
-      height: 300px;
-      margin-top: -1500px;
-      margin-left: 700px;
-      width: 530px;
-    }
-
-    .barbell {
-      margin-left: 700px;
-      height: 300px;
-      width: 530px;
-      margin-top: -800px;
-    }
-    h5{
-      text-align: center;
-      color: wheat;
-    }
-  
   </style>
 </head>
 
 <body>
-
-  <div class="home_img_container">
-    <nav class="navbar navbar-expand-lg nav-color">
-      <div class="container-fluid nav-back">
-        <a class="navbar-brand" href="/index.html"><img class="logo" src="/img/guide-img/logo.jpeg" height="80px"
-            img-bg-warning></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active fs-5" href="/pages/about_page.html" id="about" onmouseover="about()">ABOUT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active fs-5" href="/pages/contact_page.html" id="contact"
-                onmouseover="contact()">CONTACT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active fs-5" href="/pages/guide_page2.html" id="guide" onmouseover="guide()">GUIDE</a>
-            </li>
-            <li class="nav-item">
-              <!-- <a class="nav-link active fs-5"
-                href="../VaibhaviK260304-fitness-nutrition-group-project2-icp7/pages/ideal_weight.html" id="feedback"
-                onmouseover="ideal_weight()">Feedback</a> -->
-            </li>
-            <li class="nav-item log">
-              <a class="nav-link active fs-5" href="/pages/login_page.html" id="login" onmouseover="login()">LOGIN</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active fs-5" href="/registration.html" id="registration"
-                onmouseover="registration()">REGISTRATION</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <img class="img-1 image" src="/img/guide-img/black-3.jpg" alt="">
-    <h1><u>Fitness</u><br><h5>We help you to get fit for the better tomorrow.</h5>
-    </h1>
-
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-    <h4 class="h4">30-Day Quick-Start Exercise Guide for Beginners </h4>
-
-    <!-- <form>
-  
-    <input type="text"  class="form-control form-check" id="name" placeholder="Full Name" required> <br>
-
-  <input type="text" class="form-control form-check" id="num"  placeholder="Mob.No" required>  <br>
-
-  <input type="number" class="form-control form-check" id="age" placeholder="Enter  Age"> <br>
-    <input type="text" class="form-control form-check" id="weight" placeholder="Enter Weight"> <br>
-    <input type="text" class="form-control form-check" id="height" placeholder="Enter Height"> <br>
-  <select class="form-control form-check"  id="FitnessLevel">
-    <option value="">Select Level</option>
-    <option value="Beginner">Beginner</option>
-    <option value="Intermediate">Intermediate</option>
-    <option value="Advanced">Advanced</option>
-    
-  </select> <br><br>
-
-  <div class="btn">
-    <button type="submit" onclick="WorkoutPlan()" class="btn btn-primary" id="sub">Get Workout Recommendation</button>
-
-<br>
-   <div class="Recomnd" id="Recommendation"> 
-</div></div>
-
-</form>
-
-<script>
-   
-  function workout(FitnessLevel) {
-    const FitnessLevel=document.getElementById("FitnessLevel");
-    document.getElementById("recommendation").innerText = recommendation;
-
-    if (FitnessLevel==="Beginner") {
-        recommendation += "For beginners, it's important to start with basic exercises and gradually increase intensity. Consider starting with walking, bodyweight exercises, and light resistance training.\n";
-
-    }
-    else if (FitnessLevel === "Intermediate") {
-                recommendation += "Intermediate level individuals can incorporate more challenging exercises into their routines. Include a mix of cardio, strength training, and flexibility exercises to achieve your goals.\n";
-            } else if (FitnessLevel === "Advanced") {
-                recommendation += "Advanced individuals have the flexibility to engage in high-intensity workouts and specialized training programs. Focus on targeted muscle groups, advanced cardio techniques, and consider working with a personal trainer to push your limits.\n";
-            }
-
-            return recommendation;
-  }
-</script> -->
-
-    <div class="back">
-      <h5>Prepare to Work Out</h5>
-
-      <p>When it comes to slimming down and toning up, there are two key types of workouts: cardio, which burns calories
-        by raising your heart rate, and strength training, which builds the lean muscle that boosts metabolism, the rate
-        at which you burn calories. Together, this pairing can produce powerful weight-loss results.
-
-        The cardio workouts included in this program are designed to be done on any cardio machine (e.g., treadmill,
-        elliptical, bike, or rowing machine). If you prefer other activities (for instance, running, cycling, fitness
-        videos, group-fitness classes, or even battle ropes), choose another option as a substitute.</p>
-
-      <h5>Beginner Exercise Routine </h5>
-
-      <p>Here is a list of exercises you can choose. You will find more information below.
-
-      </p>
-
-
-      <div class="beginner-bk">
-        <div class="beginners-wk ">
-          <h6>Cardio </h6>
-          <ul >
-            <li>Warm-up </li>
-            <li>20 to 30 minutes cardio sessions</li>
-            <li>Interval training</li>
-          </ul>
-
-          <h6>Flexibility training</h6>
-          <ul>
-            <li>Pre and post workout stretching
-            </li>
-            <li>Total body stretching routine
-            </li>
-          </ul>
-
-          <h6>Basic strength training
-
-          </h6>
-          <ul>
-            <li>Assisted lunges
-            </li>
-            <li>Modified push-up
-            </li>
-            <li>Ball squats
-            </li>
-            <li>Overhead press
-            </li>
-            <li>Dumbbell rows
-            </li>
-            <li>Bicep curls
-            </li>
-            <li>Triceps extension
-            </li>
-            <li>Ball crunches
-            </li>
-            <li>Back extensions
-            </li>
-          </ul>
-
-          <h6>Yoga</h6>
-          <ul>
-            <li>Standing cat stretch
-            </li>
-            <li>Sun salutation
-            </li>
-            <li>Hanging back stretch
-            </li>
-            <li>Warrior I
-            </li>
-            <li>Warrior II
-            </li>
-            <li>Modified triangle
-            </li>
-            <li>Spine twist
-            </li>
-            <li>Corpse pose
-            </li>
-          </ul>
-          <img class="img-beg" src="/img/guide-img/workouts-for-beginners.jpg">
-        </div>
+  <nav class="navbar navbar-expand-lg text-bg-secondary nav-color">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="/img/logo.jpg" class="logo" height="70px" img-bg-warning></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active fs-5" href="./pages/about_page.html" id="about" onmouseover="about()">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fs-5" href="./pages/contact_page.html" id="contact"
+              onmouseover="contact()">CONTACT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fs-5" href="./pages/guide_page2.html" id="guide" onmouseover="guide()">GUIDE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fs-5" href="#" id="feedback" onmouseover="feedback()">FEEDBACK</a>
+          </li>
+          <li class="nav-item log">
+            <a class="nav-link active fs-5" href="./pages/login_page.html" id="login" onmouseover="login()">LOGIN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fs-5" href="./pages/registration.html" id="registration"
+              onmouseover="registration()">REGISTRATION</a>
+          </li>
+        </ul>
       </div>
     </div>
-    <br><br>
+  </nav>
+
+
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/img/black-6.jpg " class="d-block w-100 width" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/img/guide-img/intermediate.jpg" class="d-block w-100 width" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/img/gym_back.jpg" class="d-block w-100 width" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
 
 
+  <h1 class="bg-warning  text-success-emphasis text-center text-shadow header border border-black p-1 border-2 rounded mt-5">Nutrition</h1>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <img src="/img/guide-img/breakfast.webp" class="mt-4 img" alt="">
+      </div>
+
+      <div class="col">
+        <h3 class="breakfast">Breakfast</h3>
+        <p>For a gym beginner, a balanced breakfast that includes a good mix of carbohydrates, protein, and healthy fats
+          is ideal. Some options could include oatmeal with fruits and nuts, whole grain toast with avocado and eggs,
+          Greek yogurt with berries and granola, or a smoothie with spinach, banana, and protein powder. It's important
+          to fuel your body with nutrients that will provide energy for your workout and support muscle recovery.</p>
+
+          <button type="button" id="more" onclick="more()">Explore More↗️</button>
+      </div>
 
 
-    <h4>The Next Step: Intermediate </h4>
-    <div class="intermediate">
-      <h5>Intermediate Bodybuilding Mass Workout Routine</h5>
+    </div>
+  </div>
 
-      <p>As with our three-phase beginner’s program (which can also be used for a comeback after a layoff), even though
-        you’re a bit more advanced now, a little downturn can do wonders for recovery. You don’t need to take a full
-        week off from training, but a couple of days off or a week of low to medium intensity training with some extra
-        recovery time should get you fully prepared to move into this program.
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <h3 class="breakfast">Lunch</h3>
+        <p> Lunch in the gym is more than just refueling; it's about nourishing your body with the right nutrients to
+          support your workout and aid in recovery. Whether it's a quick post-workout snack or a full meal, choosing the
+          right balance of carbohydrates, protein, and healthy fats can help replenish energy stores, repair muscles,
+          and promote overall fitness goals. From a simple turkey and avocado wrap to a protein-packed salad with quinoa
+          and grilled chicken, there are plenty of delicious and nutritious options to enjoy after hitting the gym.</p>
+          <button type="button" id="btn-2" onclick="btn2()">Explore More↗️</button>
 
-        This routine is a four-day split with a few options as to how you break it down (listed below the routine).
+      </div>
 
-        Each workout will be slightly less volume than Phase 3 of the “beginner’s” program, but that will allow you to
-        focus more on the target muscles and exercises to keep your intensity at full tilt.</p>
+      <div class="col">
 
-      <h5>Workout Description</h5>
-      <p>If you dedicated yourself to getting through Phase 1, Phase 2, and Phase 3 of our Complete Beginner’s Program,
-        then you’ve built a solid foundation and should be ready to take things to the next level.
-
-        Our Intermediate Mass Workout is the perfect get big solution.
-
-        Now that you’ve built some strength, developed good exercise form, have seen some decent muscle gains, and have
-        hopefully developed some good eating habits, it’s time to turn on the muscle building afterburners.</p>
+        <img src="/img/guide-img/luncg.webp" class="mt-4 img-2" alt="">
+      </div>
 
 
+    </div>
+  </div>
 
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <img src="/img/guide-img/snacks.jpeg" class="mt-4 img" alt="">
 
+      </div>
 
-      <div class="beginner-bk">
-        <div class="beginners-wk ul">
-          <h6>WORKOUT SUMMARY
-          </h6>
-          <ul>
-            <li>Build Muscle
-            </li>
-            <li>Split</li>
-            <li>Intermediate</li>
-            <li>6 weeks
-            </li>
-            <li>4 Days Per Week
-            </li>
-            <li> 45-60 minutes Time Per Workout
-            </li>
-            <li>Barbell, Bodyweight, Cables, Dumbbells, Machines
-            </li>
-            <li>
-              Titanium Whey
-              BCAA Boosted
-              Launch Reloaded</li>
-          </ul>
-
-          <h6>Intermediate Workout Day 1
-          </h6>
-          <ul>
-            <li> Squats(Set-3, Reps 8-12)
-            </li>
-            <li>Hack Squats(Set-3, Reps 8-12)
-            </li>
-            <li>Sissy Squat (Set-3, Reps 10-12)</li>
-            <li> Leg Extensions (Set-4, Reps 10-12)</li>
-            <li> Lunges (Set-3, Reps 10)</li>
-            <li>Stiff Legged Deadlifts (Set-3, Reps 10-12)</li>
-            <li>Leg Curls (Set-3, Reps 8-12)</li>
-            <li>Standing Calf Raises (Set-3, Reps 10-12)</li>
-            <li>Donkey Calf Raises (Set-3, Reps 10-12) </li>
-            <li>Seated Calf Raises (Set-3, Reps 10-15)</li>
-          </ul>
-
-          <h6>Intermediate Workout Day 2
-
-          </h6>
-          <ul>
-            <li>Bench Press (Set-3, Reps 8-12)
-            </li>
-            <li>Dumbbell Incline Press (Set-3, Reps 8-12)
-            </li>
-            <li>Ball squats (Set-3, Reps 10-12)
-            </li>
-            <li>Dumbbell Fly (Set-3, Reps 10-12)
-            </li>
-            <li>Dumbbell rows (Set-3, Reps 10-12)
-            </li>
-            <li>Cable Crossovers (Set-3, Reps 10-12)
-            </li>
-            <li>Lying Barbell Extensions* (Set-3, Reps 10-12)
-            </li>
-            <li>Overhead Dumbbell Extensions (Set-3, Reps 10-12)
-            </li>
-            <li> Dumbbell Kickbacks (Set-3, Reps 10-12)
-            </li>
-          </ul>
-
-          <h6>Intermediate Workout Day 3</h6>
-          <ul>
-            <li>Deadlifts* (Set-3, Reps 8-12)
-            </li>
-            <li> Pull Downs* (Set-3, Reps 10-12)
-            </li>
-            <li>Pull Overs (Set-3, Reps 10-12)
-            </li>
-            <li>Underhand Rows (Set-3, Reps 8-12)
-            </li>
-            <li>Neutral Grip Cable Rows (Set-3, Reps 8-12)
-            </li>
-            <li>Bent Over Lateral Raises (Set-3, Reps 10-12)
-            </li>
-            <li>Barbell Curls* (Set-3, Reps 10-12)
-            </li>
-            <li>Incline Curls (Set-3, Reps 10-12)
-            </li>
-          </ul>
-          <h6>Intermediate Workout Day 4
-          </h6>
-          <ul>
-            <li>Shoulder Press* (Set-4, Reps 10-12)
-            </li>
-            <li>Incline Lateral Raises (Set-3, Reps 10-12)
-            </li>
-            <li>Cable Upright Rows (Set-3, Reps 10-12)
-            </li>
-            <li>Lateral Raises (Set-3, Reps 12-15)
-            </li>
-            <li>Warrior II (Set-3, Reps 10-12)
-            </li>
-            <li>Dumbbell Shrugs (Set-4, Reps 10-12)
-            </li>
-            <li> Leg Raises (Set-3, Reps 12-15)
-            </li>
-            <li>Sit Ups (Set-3, Reps 12-15)
-            </li>
-          </ul>
-          <img class="img-beg img-updated" src="/img/guide-img/intermediate.jpg" alt="">
-          <img class="img-beg cable " src="/img/guide-img/cable.jpg">
-          <img class="img-beg  barbell" src="/img/guide-img/barbell.jpg" alt="">
-        </div>
+      <div class="col">
+        <h3 class="breakfast">Snacks</h3>
+        <p> Snacks at the gym are like little energy boosts to power you through your workout. They're convenient,
+          tasty, and can provide the necessary fuel your body needs to maximize your performance and recovery. Whether
+          you prefer protein bars, nuts, fruit, or smoothies, there's a snack option tailored to suit your fitness goals
+          and dietary preferences. So, next time you hit the gym, don't forget to pack some snacks to keep you going
+          strong!
+        </p>
+        <button type="button" id="btn-3" onclick="btn3()">Explore More↗️</button>
       </div>
     </div>
   </div>
-  
 
- 
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <h3 class="breakfast">Dinner</h3>
+        <p> "Dinner for gym" refers to a meal designed to support your fitness goals, particularly after an evening workout. This meal should ideally contain a balance of protein, carbohydrates, and healthy fats to aid in muscle recovery and replenish energy stores. Examples include grilled chicken or fish with quinoa or sweet potatoes and a side of vegetables, or a tofu stir-fry with brown rice and mixed greens. Timing-wise, it's best to consume this meal within 30 minutes to two hours post-exercise to optimize recovery and promote muscle growth.
+        </p>
+        <button type="button" id="btn-4" onclick="btn4()">Explore More↗️</button>
+
+      </div>
+
+      <div class="col">
+        
+
+        <img src="/img/guide-img/din-5.jpg" class="mt-4 img-2" alt="">
+      </div>
+    </div>
+  </div>
+
+<br><br>
+
+<h1 class="bg-warning  text-success-emphasis text-center text-shadow header border border-black p-1 border-2 rounded mt-5">Fitness</h1>
+<br><br>
+<div class="row row-cols-1 row-cols-md-3 g-4 ">
+  <div class="col" id="first" onclick="changeColor()" >
+    <div class="card h-100" id="card">
+      <img src="/img/guide-img/begin-2.avif" class="card-img-top" id="img-beg" alt="...">
+      <div class="card-body" id="Level1" >
+        <h5 class="card-title">Beginner Level</h5>
+        <p class="card-text" >Be Proud. Before diving into the practical gym tips for beginners, remember that the most important exercise catalyst is confidence. </p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">Explore More Topics</small> <br>
+
+
+        <button class="btn" id="btnn1" onclick="btnn1()">Beginner Workout↗️</button>
+
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100" id="card2">
+      <img src="/img/guide-img/intermediate.jpg" class="card-img-top" alt="...">
+      <div class="card-body " id="Level2">
+        <h5 class="card-title">Intermediate Level</h5>
+        <p class="card-text">“I hated every minute of training, but I said, ‘Don’t quit. Suffer now and live the rest of your life as a champion.” – Muhammad Ali
+        </p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">Explore More Topics</small> <br>
+        <button class="btn" id="btnn4" onclick="btnn2()">Beginner Workout↗️</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100 " id="card3">
+      <img src="/img/guide-img/advanced.webp" class="card-img-top" alt="...">
+      <div class="card-body" id="Level3">
+        <h5 class="card-title">Advanced Level</h5>
+        <p class="card-text">Every champion was once a contender who refused to give up.” – Rock Balboa</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">Explore More Topics</small> <br>
+        <button class="btn" id="btnn7" onclick="btnn3()">Beginner Workout↗️</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  <div>
+    <br>
+    <h1
+      class="bg-warning  text-success-emphasis text-center text-shadow header border border-black p-1 border-2 rounded ">
+      Fill Up Following Form</h1>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <footer>
     <div class="footer-container">
@@ -524,12 +321,15 @@ button{
           <li><a href="./pages/gym_facilities.html">Gym Facility</a></li>
           <li><a href="./pages/guide_page.html">Nutrition Counseling</a></li>
           <li><a href="/personal-training">Personal Training</a></li>
-
         </ul>
       </div>
       <div class="footer-column">
         <h3>Contact Us</h3>
-        <p>Email: info@fitnesssite.com<br>Phone: (123) 456-7890<br>Address: 123 Main St, Anytown USA 12345</p>
+        <p><strong>Email:</strong> <a href="mailto:info@fitnesssite.com">info@fitnesssite.com</a>
+          <br><strong>Phone:</strong><a href="tel:+919900413979">+919900413979</a><br>
+          <strong>Address: </strong> plot 24 Fitness, Pune, Maharashtra, India <br>
+          411000
+        </p>
       </div>
       <div class="footer-column">
         <h3>Follow Us</h3>
