@@ -6,76 +6,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ideal_weight</title>
     <link rel="stylesheet" href="../css/ideal_weight.css">
-    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/ideal.js"></script>
+    <script src="../js/ideal_weight.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+       <link rel="stylesheet" href="../index.html">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg text-bg-secondary">
+    <nav class="navbar navbar-expand-lg nav-color">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img src="../img/img1.png" height="70px" img-bg-warning ></a>
+          <a class="navbar-brand" href="index.html"><img src="../img/logo.jpg" height="80px" img-bg-warning class="logo1"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active"  href="../pages/about_page.html" id="about" onmouseover="about()">About</a>
+                <a class="nav-link active fs-5"  href="./pages/about_page.html" id="about" onmouseover="about()">ABOUT</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="../pages/contact_page.html" id="contact" onmouseover="contact()">Contact</a>
+                <a class="nav-link active fs-5" href="./pages/contact_page.html" id="contact" onmouseover="contact()">CONTACT</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="../pages/guide_page.html" id="guide" onmouseover="guide()">Guide</a>
+                <a class="nav-link active fs-5" href="./pages/guide_page.html" id="guide" onmouseover="guide()">GUIDE</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="../pages/ideal_weight.html" id="" onmouseover="ideal_weight()">Ideal_Weight Calculator</a>
+                <a class="nav-link active fs-5" href="" id="feedback" onmouseover="feedback()">FEEDBACK</a>
+              </li>
+              <li class="nav-item log">
+                <a class="nav-link active fs-5" href="./pages/login_page.html" id="login" onmouseover="login()">LOGIN</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="../pages/login_page.html" id="login" onmouseover="login()">LOG IN</a>
+                <a class="nav-link active fs-5" href="registration.html" id="registration" onmouseover="registration()">REGISTRATION</a>
               </li>
             </ul>
           </div>
         </div>
     </nav>
-    <div class="conatainer">
-        <div class="box">
-            <h1>IDEAL WEIGHT CALCULATOR</h1>
-            <div class="contant">
-            <div class="input">
-                <label for="Age">Age: </label>
-                <input type="number"  id="age">
-            </div>
-                <div class="input">
-                    <label for="height">Height(cm) : </label>
-                    <input type="number" id="height">
-                </div>
-                <button id="Calculate" onclick="Calculate()">Calculate Ideal Weight</button>
-            </div>
-            <div class="result">
-                <p>Your Ideal Weight</p>
-                <div class="result" id="result">00.00</div>
-                <p>Comment:Your Weight is <span
-                    id="comment"> Healthy</span></p>
-            </div>
-        </div>
+        <div class="main-div main-title"><b><h2 class="title">Ideal weight calculator (Men)</h2></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
+        <b><h2 class="title">Ideal weight calculator (Women)</h2></b></div>
+    <div class="main-div">   
+    <div class="container-box">
+        <h2>Enter Height in meters</h2>
+        <input type="text" placeholder="Enter height in m" class="input" id="no.1"/>
+        <p class="answer" id="ans"></p>
+
+        <button type="button" class="btn-1" onclick="calculate()">
+            Calculate
+        </button>
+
+        <button type="button" class="btn-1" onclick="reset()">
+            Reset
+        </button>
     </div>
-    
+    <div class="container-box">
+        <h2>Enter Height in meters</h2>
+        <input type="text" placeholder="Enter height in m" class="input" id="no.1"/>
+        <p class="answer" id="ans"></p>
+
+        <button type="button" class="btn-1" onclick="calculate()">
+            Calculate
+        </button>
+
+        <button type="button" class="btn-1" onclick="reset()">
+            Reset
+        </button>
+    </div>
+</div><br><br><br><br><br>
     <script>
-        function calculate() {
-            const input1 = document.getElementById("age");
-
-            const input2 = document.getElementById("height");
-
-            const multiply = input1.value * input2.value;
-
-            const resultElement = document.getElementById("result");
-
-            resultElement.innerText = `00.00 : ${multiply}`;    
-    
+        function calculate()
+        {
+            const input1=document.getElementById("no.1");
+            const area =  22 *(parseInt(input1.value))*2;
+        
+            const ansElement=document.getElementById("ans");
+        
+            ansElement.innerHTML = `Weight :  ${area} kgs`;
+        }
+        function reset()
+        {
+            const input1=document.getElementById("no.1");
+            const input2=document.getElementById("no.2");
+            const ansElement=document.getElementById("ans");
+            input1.value='';
+            ansElement.innerText='';
+        }
+        
+        function calculate()
+        {
+            const input1=document.getElementById("no.1");
+            const area =  22 *(parseInt(input1.value)-0.1)*2;
+        
+            const ansElement=document.getElementById("ans");
+        
+            ansElement.innerHTML = `weight :  ${area} kgs`;
+        }
+        function reset()
+        {
+            const input1=document.getElementById("no.1");
+            const input2=document.getElementById("no.2");
+            const ansElement=document.getElementById("ans");
+            input1.value='';
+            ansElement.innerText='';
         }
     </script>
     <footer>
