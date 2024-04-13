@@ -50,6 +50,9 @@ body{
     display: flex;
 
 }
+.logo1{
+    border-radius: 50px;
+}
 .main-title{
     text-align: center;
     margin-left: 150px;
