@@ -1,38 +1,97 @@
+
 body{
-    display: flex;
-    min-height: 100vh;
-    align-items: center;
-    justify-content: center;
+    margin: 0%;
+    padding: 0%;
 }
-.container{
-    width: 360px;
-    background: black;
-    box-shadow: 0 0 8px rgba(250, 250, 250,0.6);
-    opacity: 0.6;
-}
-.container form{
-    width: 100px;
-    text-align: center;
-    padding: 25px 20px;
-}
-form .h1{
-    padding: 10px 0;
-}
-form .id{
-    position: relative;
-}
-.id i{
-    position: absolute;
-    font-size: ;
-}
-form input{
-    width: 100%;
-    height: 50px;
-    border: 1px solid gray;
-    border-radius: 3px;
-    background:black ;
-    font-size: 20px 20px;
+.card{
+    margin: 100px; 
+    padding: 10px;
+    border: 5px solid black;
+    border-radius: 15px;
+    border-width: 5px;
+    width: 500px;
+    margin-top: 8%;
+    background-color: rgb(41, 141, 127);
+    }
+ img{
+     height: 500px;
+     margin-top: 8%;
+
+ }
+ .main{
+     display: flex;
+     
+ }
+ button {
+    background-color:red;
     color: white;
-    padding: 0 15px;
-    font-size: 13px;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 7px;
+    border-radius: 15px;
+    transition: 0.3s;
 }
+
+button:hover{
+    box-shadow:1px 1px 2px 1px black;
+    transform: scale(1.1);
+    cursor: pointer;
+    
+}
+.review_card{
+     width: 40%;
+     height: 120px;
+     border: 2px solid black;
+     border-radius: 10px;
+     margin: 10px;
+     padding: 10px;
+     text-align: justify;
+     margin-top: 0%;
+    background-color:#004944;
+    color: white;
+}
+  .text{
+     text-decoration: none;
+     color: black;
+     margin-left: 10px;
+  }
+
+.name{
+    margin-left: 300px;
+    text-decoration: none;
+    color:red;
+}
+.review_card:hover {transform: scale(1.1);
+    transition: 0.2s;
+    cursor: pointer;
+
+}
+.page{
+     display: flex;
+     background-color: gray;
+} 
+     @media screen and (max-width:600px){
+        .page{
+             flex-direction: column;
+        }
+        .img_review img{
+             display: none;
+        }
+        .review_card{
+         width: 90%;
+         height: auto;
+        }
+        .nav-item{
+            display: none;
+        }
+        .bar{
+            display: flex;
+        }
+        .nav1{
+            width: 600px;
+            margin: 0%;
+            height: 20px;
+        }
+    }
