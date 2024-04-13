@@ -307,13 +307,13 @@ align-items: center;
         font-size: 28px;
         color: gold;
     }
-    .custom-button{
+    /* .custom-button{
         height: 50px;
         line-height: 50px;
         background: gold;
         text-decoration: none;
         font-family: 'Open Sans', sans-serif;
-    }
+    } */
     .gym-banner-container .container a {
         font-size: small;
         height: 30px;

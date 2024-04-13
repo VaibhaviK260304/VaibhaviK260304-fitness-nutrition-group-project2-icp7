@@ -21,6 +21,9 @@
             padding: 0;
         }
 
+        .navbar-nav ul li a{
+            color: #fff;
+        }
         .container {
             vertical-align: middle;
             max-width: 80%;
@@ -123,7 +126,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg nav-color">
+    <nav class="navbar navbar-expand-lg text-bg-secondary nav-color">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html"><img src="./../img/img1.png" height="70px" img-bg-warning></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -133,22 +136,28 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" href="./about_page.html" id="about" onmouseover="about()">About</a>
+                        <a class="nav-link active" href="./../index.html" id="about" onmouseover="home()">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./about_page.html" id="about" onmouseover="about()">ABOUT</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="./contact_page.html" id="contact"
-                            onmouseover="contact()">Contact</a>
+                            onmouseover="contact()">CONTACT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="./guide_page.html" id="guide" onmouseover="guide()">Guide</a>
+                        <a class="nav-link active" href="./guide_page.html" id="guide" onmouseover="guide()">GUIDE</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="./rating&review.html" id="feedback"
-                            onmouseover="feedback()">Feedback</a>
+                        <a class="nav-link active" href="./feedback.html" id="feedback"
+                            onmouseover="feedback()">FEEDBACK</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="./../registration.html" id="login" onmouseover="login()">LOG
+                        <a class="nav-link active" href="./registration.html" id="login" onmouseover="login()">LOG
                             IN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fs-5" href="./registration.html" id="registration" onmouseover="registration()">REGISTRATION</a>
                     </li>
                 </ul>
             </div>
