@@ -127,72 +127,74 @@ body{
     
     .Address {
         text-decoration: none;
-        margin-left: 50px; 
+        margin-left: 50px; /* Adjusted margin for left alignment */
     }
     
     .icon {
         font-size: 30px;
         cursor: pointer;
     }
-
-
-    /* Media query for tablets  */
-@media only screen and (max-width: 768px) {
-    .contactform {
-        width: 80%; 
-        margin: 0 auto; 
-        margin-top: 20px;
-        margin-left: 70px;
-    }
     
-    .contact-info {
-        position: relative;
-        margin-top: 20px; 
-        margin-left: 190px; 
-        text-align: left; 
-    }
-    .contact-info h3{
-      
-        margin-top:10px ;
-        margin-left:50px;
-        margin-bottom: 20px;
+    
+    /* Media query for tablets (portrait) */
+    @media only screen and (max-width: 768px) {
+        .contactform {
+            width: 80%; /* Adjusted width for tablet devices */
+            margin: 0 auto; /* Center the form */
+            margin-top: 20px;
+            margin-left: 70px;
+        }
         
-    }
-    .conatct-form-info{
-       
-        height: 700px;
-      
+        .contact-info {
+            position: relative;
+            margin-top: 20px; /* Adjusted margin for contact info */
+            margin-left: 190px; /* Reset margin-left */
+            text-align: left; /* Center align contact info */
+        }
+        .contact-info h3{
+          
+            margin-top:10px ;
+            margin-left:50px;
+            margin-bottom: 20px;
+            
+        }
+        .conatct-form-info{
+           
+            height: 700px;
+          
+            }
+        
+    }   
+    
+    /* Media query for mobile devices */
+    @media only screen and (max-width: 480px) {
+        .contactform {
+            width: 90%; /* Adjusted width for mobile devices */
+            margin: 0 auto; /* Center the form */
+            margin-top: 20px;
+            margin-left: 25px;
+            
         }
     
-}   
-
-/* Media query for mobile devices */
-@media only screen and (max-width: 480px) {
-    .contactform {
-        width: 90%; 
-        margin: 0 auto; 
-        margin-top: 20px;
-        margin-left: 25px;
-        
-    }
-
-    .contact-info {
-        position: relative;
-        margin-top: 20px; 
-        margin-left: 60px; 
-        text-align: left; 
-    }
-    .contact-info h3{
-      
-        margin-top:10px ;
-        margin-left:40px;
-        margin-bottom: 20px;
-        
-    }
-    
-    .conatct-form-info{
-       height: 700px;
-      
+        .contact-info {
+            position: relative;
+            margin-top: 20px; /* Adjusted margin for contact info */
+            margin-left: 60px; /* Reset margin-left */
+            text-align: left; /* Center align contact info */
         }
+        .contact-info h3{
+          
+            margin-top:10px ;
+            margin-left:40px;
+            margin-bottom: 20px;
+            
+        }
+        
+        .conatct-form-info{
+           
+            height: 700px;
+          
+            }
+        
+    }
     
-}
