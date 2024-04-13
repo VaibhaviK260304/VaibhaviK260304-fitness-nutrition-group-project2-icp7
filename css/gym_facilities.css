@@ -284,6 +284,25 @@ align-items: center;
         margin: auto;
        
     }
+    .side-content h6 {
+        font-size: 20px;
+    }
+    .side-content p {
+        font-size: small;
+    }
+    
+    .side-content h1 {
+        width: 100%;
+        font-size: 28px;
+        color: gold;
+    }
+    .custom-button{
+        height: 50px;
+        line-height: 50px;
+        background: gold;
+        text-decoration: none;
+        font-family: 'Open Sans', sans-serif;
+    }
     .gym-banner-container .container a {
         font-size: small;
         height: 30px;
