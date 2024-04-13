@@ -1,148 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <title>Document</title>
 
-   <style>
-    body{
-       
-        background-color: #dcdde1;
-    }
-    h1{
-        color: white;
-        margin-top: -450px;
-        text-align: center;
-        font-size: 80px;
-        
-    }
-    .img-1{
-       /* margin-left: 828px; */
-      height: 500px;
-      width: 1520px;
+    <style>
+        body {
 
-
-    }
-    .para-1{
-        text-align: left;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    h2{
-        text-align: center;
-        margin-left: 650px;
-        font-size: 30px;
-        background-color: lightcoral;
-        width: 250px;
-    }
-    .box-1{
-        display:flex;
-        flex-direction: row;
-        justify-content: space-around;
-        
-       
-        
+            background-color: #dcdde1;
         }
-    .sub-box{
-        border: 1px solid black;
-        background-color: lightgrey;
-        width: 450px;
-        text-align: center;
-        height: auto;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    .sub-box:hover{
-       box-shadow: 5px 5px 2px black;
-    }
-    .card{
-        background-color: yellow;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 20px;
-        padding-left: 15px;
-        padding-right: 15px;
-        border: 1px solid black;
-        
-        
-       
-    }
-   </style>
+
+        h1 {
+            color: white;
+            margin-top: -450px;
+            text-align: center;
+            font-size: 80px;
+
+        }
+
+        .img-1 {
+            /* margin-left: 828px; */
+            height: 550px;
+            width: 1536px;
+
+
+        }
+
+        .para-1 {
+            color: white;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+            border-radius: 10px;
+            padding: 2px;
+            margin-left: 650px;
+            font-size: 30px;
+            background-color: lightpink;
+            color: black;
+            width: 250px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            letter-spacing: 0.2rem;
+        }
+
+        .box-1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            background-color: darkgrey;
+           
+
+
+        }
+
+        .sub-box {
+            border: 1px solid black;
+            background-color: white;
+            border-radius: 8px;
+            width: 450px;
+            text-align: center;
+            height: auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .sub-box:hover {
+            box-shadow: 2px 2px 0px black;
+        }
+
+        .card {
+            background-color: lightslategray;
+            color: yellow;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border: 1px solid black;
+        }
+        .diet-plan{
+
+        }
+
+        .widht-card {
+
+            border: 1px solid none;
+            padding: 15px;
+            margin-top: -86px;
+           
+            background-image: url(/img/guide-img/background-1.jpg);
+            opacity: 0.8;
+        }
+
+        .card-1 {
+
+            margin-top: 25x;
+            margin-left: 100px;
+        }
+
+        .cards {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: lightgray;
+            height: 130px;
+            width: 450px;
+            margin-left: 545px;
+            border-radius: 25px;
+            
+        }
+
+        .cards:hover {
+
+            border: 1px solid black;
+            background-color: lightsalmon;
+            transition: 0.8s;
+        }
+
+        .Breakfast {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        i {
+            font-size: 20px;
+        }
+
+        .snacks {
+            border-radius: 50%;
+        }
+
+        .head {
+            background-color: lightpink;
+            color: black;
+            width: 390px;
+            margin-left: 570px;
+            padding-left: 19px;
+            padding-right: 19px;
+            border-radius: 10px;
+            word-spacing: 0.3rem;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .horizontal{
+            display:flex;
+        }
+        .dietPlan{
+           
+            background-repeat: no-repeat;
+            width: 1120px;
+            height: 500px;
+        }
+    </style>
 </head>
+
 <body>
-    
-   
+
+
     <img class="img-1" src="/img/guide-img/food-3.jpg">
     <h1><u>Nutrients</u></h1>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <p class="para-1">Nutrients are essential substances that humans need to maintain health and function properly. They are divided into macronutrients and micronutrients. <br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-        <b>1. Macronutrients:</b> <br>
-           - Carbohydrates: Main source of energy for the body. <br>
-           - Proteins: Important for building and repairing tissues, as well as for various bodily functions. <br>
-           - Fats: Provide energy, help absorb certain vitamins, and are essential for cell structure and function. <br><br>
-        
-       <b> 2. Micronutrients:</b><br>
-           - Vitamins: Organic compounds necessary for various metabolic processes and overall health. Examples include vitamin A, B vitamins, vitamin C, vitamin D, vitamin E, and vitamin K.<br>
-           - Minerals: Inorganic substances essential for bodily functions, such as calcium, iron, magnesium, potassium, sodium, zinc, and others.<br>
-           - Trace elements: Essential minerals needed in very small amounts, such as selenium, iodine, copper, manganese, chromium, and molybdenum.<br>
-        
-        In addition to these, water is also considered an essential nutrient. It plays a crucial role in various bodily functions, including digestion, absorption, circulation, temperature regulation, and waste removal.<br><br>
-        
-        A balanced diet that includes a variety of foods from different food groups is essential to ensure adequate intake of all necessary nutrients. Additionally, individual nutritional needs may vary based on factors such as age, sex, weight, activity level, and overall health status. Consulting with a healthcare professional or registered dietitian can provide personalized guidance on meeting specific nutritional needs.</p>
+    <div class="widht-card">
 
-        <br>
-        <h2>Macronutrients</h2>
+        <p class="para-1">Nutrients are essential substances that humans need to maintain health and function properly.
+            They are divided into macronutrients and micronutrients. <br><br>
 
-        <div class="box-1">
+            <b>1. Macronutrients:</b> <br>
+            - Carbohydrates: Main source of energy for the body. <br>
+            - Proteins: Important for building and repairing tissues, as well as for various bodily functions. <br>
+            - Fats: Provide energy, help absorb certain vitamins, and are essential for cell structure and function.
+            <br><br>
+
+            <b> 2. Micronutrients:</b><br>
+            - Vitamins: Organic compounds necessary for various metabolic processes and overall health. Examples include
+            vitamin A, B vitamins, vitamin C, vitamin D, vitamin E, and vitamin K.<br>
+            - Minerals: Inorganic substances essential for bodily functions, such as calcium, iron, magnesium,
+            potassium, sodium, zinc, and others.<br>
+            - Trace elements: Essential minerals needed in very small amounts, such as selenium, iodine, copper,
+            manganese, chromium, and molybdenum.<br>
+
+            In addition to these, water is also considered an essential nutrient. It plays a crucial role in various
+            bodily functions, including digestion, absorption, circulation, temperature regulation, and waste
+            removal.<br><br>
+
+            A balanced diet that includes a variety of foods from different food groups is essential to ensure adequate
+            intake of all necessary nutrients. Additionally, individual nutritional needs may vary based on factors such
+            as age, sex, weight, activity level, and overall health status. Consulting with a healthcare professional or
+            registered dietitian can provide personalized guidance on meeting specific nutritional needs.
+        </p>
+    </div>
+
+    <br>
+    <h2>Macronutrients</h2>
+
+    <div class="box-1">
 
 
-            <div class="sub-box">
-                <b class="card">Carbohydrates</b> <br>
-            <p>Carbohydrates provide numerous benefits to the human body, supporting overall health and well-being. <br><br>
+        <div class="sub-box">
+            <b class="card">Carbohydrates</b> <br>
+            <p>Carbohydrates provide numerous benefits to the human body, supporting overall health and well-being.
+                <br><br>
 
-              <b>  Energy Production:</b> <br> Carbohydrates serve as the primary source of energy for the body. When consumed, carbohydrates are broken down into glucose, which is then utilized by cells for fuel. Glucose is particularly important for providing energy to the brain and muscles, supporting cognitive function, physical activity, and daily tasks.  <br><br>
+                <b> Energy Production:</b> <br> Carbohydrates serve as the primary source of energy for the body. When
+                consumed, carbohydrates are broken down into glucose, which is then utilized by cells for fuel. Glucose
+                is particularly important for providing energy to the brain and muscles, supporting cognitive function,
+                physical activity, and daily tasks. <br><br>
 
-                <b>Dietary Fiber:</b><br> Many carbohydrate-rich foods, such as whole grains, fruits, vegetables, and legumes, are excellent sources of dietary fiber. Fiber plays a crucial role in digestive health by promoting regular bowel movements, preventing constipation, and supporting a healthy gut microbiome. Additionally, fiber helps regulate blood sugar levels, lower cholesterol levels, and promote satiety, which can aid in weight management and reduce the risk of chronic diseases such as heart disease and type 2 diabetes. <br><br>
-                
-                <b>Nutrient Dense: </b> <br>Carbohydrate-rich foods are often rich sources of essential vitamins, minerals, and phytonutrients. Whole grains, fruits, and vegetables contain an array of vitamins (such as vitamin C, vitamin A, and various B vitamins) and minerals (such as potassium, magnesium, and iron) that are vital for overall health and function. Consuming a variety of carbohydrate-containing foods helps ensure adequate intake of these essential nutrients, supporting various bodily processes and promoting overall well-being. <br><br>
-                
-                <b>Fuel for Physical Activity: </b><br>Carbohydrates play a crucial role in supporting physical performance and exercise. During high-intensity or prolonged physical activity, carbohydrates provide the necessary energy to fuel muscles and sustain performance. Consuming carbohydrates before exercise helps top up glycogen stores, delaying fatigue and improving endurance. Additionally, consuming carbohydrates post-exercise replenishes glycogen stores, supports muscle recovery, and promotes tissue repair.</p></div>   
+                <b>Dietary Fiber:</b><br> Many carbohydrate-rich foods, such as whole grains, fruits, vegetables, and
+                legumes, are excellent sources of dietary fiber. Fiber plays a crucial role in digestive health by
+                promoting regular bowel movements, preventing constipation, and supporting a healthy gut microbiome.
+                Additionally, fiber helps regulate blood sugar levels, lower cholesterol levels, and promote satiety,
+                which can aid in weight management and reduce the risk of chronic diseases such as heart disease and
+                type 2 diabetes. <br><br>
+
+                <b>Nutrient Dense: </b> <br>Carbohydrate-rich foods are often rich sources of essential vitamins,
+                minerals, and phytonutrients. Whole grains, fruits, and vegetables contain an array of vitamins (such as
+                vitamin C, vitamin A, and various B vitamins) and minerals (such as potassium, magnesium, and iron) that
+                are vital for overall health and function. Consuming a variety of carbohydrate-containing foods helps
+                ensure adequate intake of these essential nutrients, supporting various bodily processes and promoting
+                overall well-being. <br><br>
 
 
-
-
-
-            <div class="sub-box"><b class="card">Proteins </b><br>
-                <p>Proteins indeed play a crucial role in supporting fitness and exercise performance. Here's how proteins benefit human fitness:
-                <br>
-                <b>Muscle Repair and Growth:</b> <br>Proteins are made up of amino acids, which are the building blocks of muscle tissue. Consuming an adequate amount of protein supports muscle repair and growth, especially after resistance training or intense exercise. This process is essential for improving muscle strength, endurance, and overall fitness. <br><br>
-                
-                <b>Maintenance of Lean Body Mass:</b> <br>Protein intake is vital for preserving lean body mass, especially during periods of calorie restriction or weight loss. Adequate protein consumption helps prevent muscle loss and promotes fat loss, leading to improvements in body composition and overall fitness. <br><br>
-                
-                <b>Satiety and Appetite Control:</b> <br>Protein-rich foods are known to be more filling and satiating than foods high in carbohydrates or fats. Including protein in meals and snacks can help control appetite, reduce hunger cravings, and support weight management efforts. This is beneficial for individuals looking to maintain a healthy weight or achieve specific fitness goals. <br><br>
-                
-                <b>Support for Immune Function:</b> <br>Proteins play a critical role in supporting immune function by producing antibodies and immune cells that help defend the body against infections and illnesses. Regular physical activity can temporarily suppress the immune system, and consuming adequate protein helps support immune health, reducing the risk of illness and supporting overall well-being. <br><br>
-                
-                <b>  Enhanced Recovery:</b> <br>Consuming protein post-exercise helps facilitate muscle recovery by providing the necessary amino acids to repair damaged muscle fibers and promote muscle protein synthesis. Pairing protein with carbohydrates after workouts can further enhance recovery by replenishing glycogen stores and supporting energy restoration. <br><br></p>
-                
-                
-            
-            </div>
-            <div class="sub-box"><b class="card">Fats</b>
-
-                <p>
-                    Certainly! Here are four key points related to fats for fitness: <br><br>
-
-<b>Energy Source During Endurance Exercise:</b> <br>While carbohydrates are the primary energy source for high-intensity and short-duration exercise, fats become increasingly important during longer-duration activities. Endurance athletes often rely on fats as a fuel source during prolonged workouts or events. By training the body to efficiently use fats for energy, endurance athletes can sustain performance over extended periods. <br><br>
-
-<b>Body Composition and Weight Management</b><br> Including healthy fats in the diet can support weight management and body composition goals. Consuming moderate amounts of healthy fats, such as monounsaturated and polyunsaturated fats found in foods like nuts, seeds, avocados, and fatty fish, can promote satiety and help control appetite. This can prevent overeating and support adherence to calorie-controlled diets, which are important for achieving and maintaining a healthy weight. <br><br>
-
-<b>Hormonal Balance:</b><br> Fats play a crucial role in hormone production and regulation, which can impact fitness and exercise performance. Hormones such as testosterone, estrogen, and cortisol influence muscle growth, metabolism, and recovery. Including adequate healthy fats in the diet supports hormone production and balance, which can optimize fitness outcomes and overall well-being. <br><br>
-
-<b>Joint Health and Injury Prevention:</b><br>b Fats are important for joint health and mobility, particularly omega-3 fatty acids found in fatty fish, flaxseeds, and walnuts. Omega-3s have anti-inflammatory properties that can help reduce inflammation and support joint function. This is particularly beneficial for individuals engaged in high-impact activities such as running, jumping, or weightlifting, as it may help prevent injuries and support overall joint health. <br>
-
-</p>
-            </div>
-            
+            </p>
         </div>
+
+
+
+
+
+        <div class="sub-box"><b class="card">Proteins </b><br>
+            <p>Proteins indeed play a crucial role in supporting fitness and exercise performance. Here's how proteins
+                benefit human fitness:
+                <br>
+                <b>Muscle Repair and Growth:</b> <br>Proteins are made up of amino acids, which are the building blocks
+                of muscle tissue. Consuming an adequate amount of protein supports muscle repair and growth, especially
+                after resistance training or intense exercise. This process is essential for improving muscle strength,
+                endurance, and overall fitness. <br><br>
+
+                <b>Maintenance of Lean Body Mass:</b> <br>Protein intake is vital for preserving lean body mass,
+                especially during periods of calorie restriction or weight loss. Adequate protein consumption helps
+                prevent muscle loss and promotes fat loss, leading to improvements in body composition and overall
+                fitness. <br><br>
+
+                <b>Satiety and Appetite Control:</b> <br>Protein-rich foods are known to be more filling and satiating
+                than foods high in carbohydrates or fats. Including protein in meals and snacks can help control
+                appetite, reduce hunger cravings, and support weight management efforts. This is beneficial for
+                individuals looking to maintain a healthy weight or achieve specific fitness goals. <br><br>
+
+                <b>Support for Immune Function:</b> <br>Proteins play a critical role in supporting immune function by
+                producing antibodies and immune cells that help defend the body against infections and illnesses.
+                Regular physical activity can temporarily suppress the immune system, and consuming adequate protein
+                helps support immune health, reducing the risk of illness and supporting overall well-being. <br><br>
+
+
+            </p>
+
+
+
+        </div>
+        <div class="sub-box"><b class="card">Fats</b>
+            <br>
+            <p>
+                Certainly! Here are four key points related to fats for fitness: <br><br>
+
+                <b>Energy Source During Endurance Exercise:</b> <br>While carbohydrates are the primary energy source
+                for high-intensity and short-duration exercise, fats become increasingly important during
+                longer-duration activities. Endurance athletes often rely on fats as a fuel source during prolonged
+                workouts or events. By training the body to efficiently use fats for energy, endurance athletes can
+                sustain performance over extended periods. <br><br>
+
+                <b>Body Composition and Weight Management</b><br> Including healthy fats in the diet can support weight
+                management and body composition goals. Consuming moderate amounts of healthy fats, such as
+                monounsaturated and polyunsaturated fats found in foods like nuts, seeds, avocados, and fatty fish, can
+                promote satiety and help control appetite. This can prevent overeating and support adherence to
+                calorie-controlled diets, which are important for achieving and maintaining a healthy weight. <br><br>
+
+                <b>Hormonal Balance:</b><br> Fats play a crucial role in hormone production and regulation, which can
+                impact fitness and exercise performance. Hormones such as testosterone, estrogen, and cortisol influence
+                muscle growth, metabolism, and recovery. Including adequate healthy fats in the diet supports hormone
+                production and balance, which can optimize fitness outcomes and overall well-being. <br><br>
+
+
+
+            </p>
+        </div>
+
+    </div>
+
+
+    <h3 class="head">Make your own nutrition plan</h3>
+
+<div class="diet-plan">
+    <div>
+        <div class="cards">
+            <h3 class="Breakfast">Breakfast <br> <i>500 calorie</i> </h3> <img class="card-1"
+                src="/img/guide-img/breakfast-2.webp" alt="">
+        </div>
+    </div>
+    <br>
+    <div>
+        <div class="cards">
+            <h3 class="Breakfast">Lunch <br> <i>700 calorie</i> </h3> <img class="card-1"
+                src="/img/guide-img/lunch.webp" alt="" height="110px">
+        </div>
+    </div>
+    <br>
+    <div>
+        <div class="cards">
+            <h3 class="Breakfast">Snacks <br> <i>400 calorie</i> </h3> <img class="card-1 snacks "
+                src="/img/guide-img/snk-1.jpg" alt="" width="160px" height="120px">
+        </div>
+    </div>
+    <br>
+    <div>
+        <div class="cards">
+            <h3 class="Breakfast">Dinner <br> <i>600 calorie</i> </h3> <img class="card-1 snacks"
+                src="/img/guide-img/din-5.jpg" alt="" width="150px">
+        </div>
+    </div>
+
+
+    </div>
+    
+</div>
+
+    
 </body>
+
 </html>
