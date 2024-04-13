@@ -28,3 +28,16 @@ body{
     cursor: pointer;
     line-gap-override:  20px;
 }
+.lm{
+    margin: 0px 100px;
+}
+.p{
+    color: antiquewhite;
+}
+.expert p {
+display: none;
+}
+.expert{
+    display: block;
+    margin: 10px 10px;
+}
