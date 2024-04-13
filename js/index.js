@@ -41,7 +41,6 @@ function login(){
   document.getElementById("feedback").style.color="White";
   document.getElementById("login").style.color="rgb(20,253,30)";
   document.getElementById("registration").style.color="white";
-
 }
 function registration(){
   document.getElementById("about").style.color="white";
@@ -102,7 +101,7 @@ function toggleBookmark3()
 }
 
 function toggleDescription(button) {
-  var description = button.previousElementSibling;
+  let description = button.previousElementSibling;
   if (description.style.display === "none") {
     description.style.display = "block";
     button.textContent = "Hide Description";
