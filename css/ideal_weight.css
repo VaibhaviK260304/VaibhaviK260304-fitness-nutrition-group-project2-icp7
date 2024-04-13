@@ -3,9 +3,9 @@ body{
     background: url(../img/bg.jpg);
     min-height: 100vh;
 }
-.container{
+.container-box{
     background-color: white;
-    width: 100px;
+    width: 400px;
     display: block;
     margin: 0 auto;
     padding: 10px;
@@ -15,7 +15,7 @@ body{
 }
 .title{
     text-align: center;
-    color: black;
+    color: white;
 }
 .input{
     width: 90%;
@@ -33,19 +33,27 @@ body{
     text-align: center;
     font-size: 20px;
 }
-.btn{
+.btn-1{
     width:  130px;
     height: 40px;
     margin: 10px auto;
     display: block;
     font-size: 20px;
-    background-color: white;
+    background-color: gold;
     color:black;
     cursor: pointer;
     border: none;
     border-radius: 10px;
     padding: 5px;
     display: flexbox;
+}
+.main-div{
+    display: flex;
+
+}
+.main-title{
+    text-align: center;
+    margin-left: 150px;
 }
 @media screen and (max-width : 600px){
     .container{
