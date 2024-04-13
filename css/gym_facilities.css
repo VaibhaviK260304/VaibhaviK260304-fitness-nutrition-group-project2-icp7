@@ -190,25 +190,49 @@ a {
 .membership-packages .card{
     transition: all .3s ease;
 }
+.col-lg-4, .col-md-6{
+    padding: 0px 0px;
+}
 .membership-packages .card:hover{
     transform: translateY(-10px);
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
 
 }
+.card-footer a{
+    text-decoration: none;
+    color: #fff;
+}
+.card-footer a:hover{
+    color: gold;
+    text-decoration: none;
+}
+
+ .main-service:hover {
+    transition: all .3s ease-in-out;
+    transform: translateY(-10px);
+    background-color: #ffc36b;
+    color: white;
+}
+
 .gym-opening-hours-container{
     background: rgb(255,255,255);
 background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0, 0, 0, 0.874) 70%), url('./../img/gym-facilities-page/gym-banner.jpg');
-height: 550px;
+height: 500px;
 background-size: cover;
 background-repeat: no-repeat;
-position: relative;
+display: flex;
+justify-content: right;
+align-items: center;
+/* position: relative; */
 }
 .gym-opening-hours{
-    top: 50%;
+    color: #fff;
+    margin-right: 50px;
+    /* top: 50%;
     right: 5%;
     transform: translate(-50%, -50%);
     color: #fff;
-    position: absolute;
+    position: absolute; */
 }
 .gym-opening-hours h3{
     font-size: 36px;
@@ -244,12 +268,12 @@ position: relative;
         font-size: 1rem;
     }
     .gym-banner-container{
-        height:  30vh;
+        height:  35vh;
     }
     .gym-banner-container .container {
         width: 90vw;
         font-size: small;
-        top: 10%;
+        top: 20%;
         left: 5%;
     }
 
@@ -259,7 +283,8 @@ position: relative;
     }
 
     .gym-banner-container .container h1 {
-        font-size: large;
+        font-size: 20px;
+        margin-bottom: 5px;
     }
 
     .side-content {
@@ -270,6 +295,25 @@ position: relative;
         margin: auto;
        
     }
+    .side-content h6 {
+        font-size: 20px;
+    }
+    .side-content p {
+        font-size: small;
+    }
+    
+    .side-content h1 {
+        width: 100%;
+        font-size: 28px;
+        color: gold;
+    }
+    /* .custom-button{
+        height: 50px;
+        line-height: 50px;
+        background: gold;
+        text-decoration: none;
+        font-family: 'Open Sans', sans-serif;
+    } */
     .gym-banner-container .container a {
         font-size: small;
         height: 30px;
@@ -300,4 +344,63 @@ position: relative;
 .animation {
     animation: roll 1s infinite;
     transition: all .55s ease-out;
+}
+
+footer {
+    background-color: #212529 ;
+    padding: 2rem 0;
+    color: #fff;
+}
+
+.footer-container {
+    display: flex;
+    text-align: justify;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    flex-wrap: wrap;
+
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 1rem;
+    padding-bottom: 10px;
+}
+
+.footer-column h3 {
+    color: gold;
+    padding-bottom: 5px;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 1rem;
+}
+
+.footer-column p,
+.footer-column ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column a {
+    line-height: 2;
+    color: #fff;
+    text-decoration: none;
+    transition: all .35s ease;
+}
+
+.footer-column a:hover {
+    padding-left: 10px;
+    color: gold;
+    text-decoration: none;
+}
+
+.footer-copyright {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #6c757d;
 }
