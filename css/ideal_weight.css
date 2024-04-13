@@ -2,20 +2,24 @@ body{
     min-height: 100vh;
     background: url(../img/bg.jpg);
     background-size:cover;
-   
+    
 }
 
 .conatainer{
-    position: absolute;
+    position: relative;
     left: 50%;
     top: 40%;
     transform: translate( -50%, -50% );
-    margin-top: 70px;
+    margin-top: 500px;
+    width: 500px;
+    align-items: center;
+    justify-content: center;
 
 }
 
 .box{
-    min-width: 600px;
+    min-width: 650px;
+    height: 700px;
     background: white;
     border-radius: 38px;
     text-align: center;
@@ -91,4 +95,10 @@ button:hover{
     padding: 7px 20px;
     border-radius: 55px;
     
+}
+.footer-container{
+    margin-bottom: 10%;
+    position: relative;
+    margin-left: 0;
+    width: 100%;
 }
