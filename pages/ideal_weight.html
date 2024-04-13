@@ -34,7 +34,7 @@
                 <a class="nav-link active fs-5" href="./pages/guide_page.html" id="guide" onmouseover="guide()">GUIDE</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active fs-5" href="../VaibhaviK260304-fitness-nutrition-group-project2-icp7/pages/ideal_weight.html" id="feedback" onmouseover="ideal_weight()">IDEAL_WEIGHT CALCULATION</a>
+                <a class="nav-link active fs-5" href="../VaibhaviK260304-fitness-nutrition-group-project2-icp7/pages/ideal_weight.html" id="ideal_weight" onmouseover="ideal_weight()">IDEAL_WEIGHT CALCULATION</a>
               </li>
               <li class="nav-item log">
                 <a class="nav-link active fs-5" href="./pages/login_page.html" id="login" onmouseover="login()">LOGIN</a>
@@ -46,28 +46,74 @@
           </div>
         </div>
     </nav>
-    <div class="conatainer">
-         <div class="box">
-            <h1>IDEAL WEIGHT CALCULATOR</h1>
-            <div class="contant">
-            <div class="input">
-                <label for="Age">Age: </label>
-                <input type="number"  id="age">
-            </div>
-                <div class="input">
-                    <label for="height">Height(cm) : </label>
-                    <input type="number" id="height">
-                </div>
-                <button id="Calculate" onclick="Calculate()">Calculate Ideal Weight</button>
-            </div>
-            <div class="result">
-                <p>Your Ideal Weight</p>
-                <div class="result" id="result">00.00</div>
-                <p>Comment:Your Weight is <span
-                    id="comment"> Healthy</span></p>
-            </div>
-        </div>
-     </div>
+<body>
+    <b><u><h2 class="title">Ideal weight calculator (Men)</h2></u></b>
+    <div class="container">
+        <h2>Enter Height in meters</h2>
+        <input type="text" placeholder="Enter height in m" class="input" id="no.1"/>
+        <p class="answer" id="ans"></p>
+
+        <button type="button" class="btn" onclick="calculate()">
+            Calculate
+        </button>
+
+        <button type="button" class="btn" onclick="reset()">
+            Reset
+        </button>
+    </div>
+    <b><u><h2 class="title">Ideal weight calculator (Women)</h2></u></b>
+    <div class="container">
+        <h2>Enter Height in meters</h2>
+        <input type="text" placeholder="Enter height in m" class="input" id="no.1"/>
+        <p class="answer" id="ans"></p>
+
+        <button type="button" class="btn" onclick="calculate()">
+            Calculate
+        </button>
+
+        <button type="button" class="btn" onclick="reset()">
+            Reset
+        </button>
+    </div>
+    <script>
+        function calculate()
+        {
+            const input1=document.getElementById("no.1");
+            const area =  22 *(parseInt(input1.value))*2;
+        
+            const ansElement=document.getElementById("ans");
+        
+            ansElement.innerHTML = `Area :  ${area} kgs`;
+        }
+        function reset()
+        {
+            const input1=document.getElementById("no.1");
+            const input2=document.getElementById("no.2");
+            const ansElement=document.getElementById("ans");
+            input1.value='';
+            ansElement.innerText='';
+        }
+    </script>
+    
+        <script>
+        function calculate()
+        {
+            const input1=document.getElementById("no.1");
+            const area =  22 *(parseInt(input1.value)-0.1)*2;
+        
+            const ansElement=document.getElementById("ans");
+        
+            ansElement.innerHTML = `Area :  ${area} kgs`;
+        }
+        function reset()
+        {
+            const input1=document.getElementById("no.1");
+            const input2=document.getElementById("no.2");
+            const ansElement=document.getElementById("ans");
+            input1.value='';
+            ansElement.innerText='';
+        }
+    </script>
     <footer>
         <div class="footer-container">
             <div class="footer-column">
