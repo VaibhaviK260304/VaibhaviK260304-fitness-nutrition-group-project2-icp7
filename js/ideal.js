@@ -25,11 +25,11 @@ function guide(){
     document.getElementById("registration").style.color="white";
 
 }
-function ideal_weight(){
+function feedback(){
     document.getElementById("about").style.color="white";
     document.getElementById("contact").style.color="white";
     document.getElementById("guide").style.color="white";
-    document.getElementById("ideal_weight").style.color="rgb(20,253,30)";
+    document.getElementById("feedback").style.color="rgb(20,253,30)";
     document.getElementById("login").style.color="white";
     document.getElementById("registration").style.color="white";
 
