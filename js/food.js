@@ -1,8 +1,8 @@
-function getDietloss(){
-   const weightloss= document.getElementById("description");
+function getDietloss() {
+    const weightloss = document.getElementById("description");
 
 
-    weightloss.innerText=`
+    weightloss.innerText = `
     14 Healthy Breakfast Foods That Help You Lose Weight
     
     1.Eggs
@@ -19,21 +19,21 @@ function getDietloss(){
     12.Oatmeal
     13.Flaxseeds
     14.Nuts`
-    weightloss.style.background="lightyellow";
-    weightloss.style.textAlign="center";
-    weightloss.style.borderRadius="20px";
-    weightloss.style.fontSize="15px"
-    
-    document.getElementById("wl").style.background="lightyellow"
-    document.getElementById("wg").style.background="yellow"
-    document.getElementById("mg").style.background="yellow"
+    weightloss.style.background = "lightyellow";
+    weightloss.style.textAlign = "center";
+    weightloss.style.borderRadius = "20px";
+    weightloss.style.fontSize = "15px"
+
+    document.getElementById("wl").style.background = "lightyellow"
+    document.getElementById("wg").style.background = "yellow"
+    document.getElementById("mg").style.background = "yellow"
 
 
 }
 
 function getDietgain() {
-        const weightgain=document.getElementById("description");
-        weightgain.innerText=`
+    const weightgain = document.getElementById("description");
+    weightgain.innerText = `
         A healthy breakfast for weight gain must offer anywhere between 200-300 calories per serving, which may vary with factors like body weight and metabolism.
 
         1. Avocado and egg sandwich
@@ -47,17 +47,17 @@ function getDietgain() {
         10. Potato Sandwich
 
         `
-        weightgain.style.background="lightgreen"
-        document.getElementById("wg").style.background="lightgreen"
-        document.getElementById("wl").style.background="yellow"
-        document.getElementById("mg").style.background="yellow"
+    weightgain.style.background = "lightgreen"
+    document.getElementById("wg").style.background = "lightgreen"
+    document.getElementById("wl").style.background = "yellow"
+    document.getElementById("mg").style.background = "yellow"
 }
 
 
 function getDietfit() {
-    const fit=document.getElementById("description");
-    fit.style.background="lightpink"
-    fit.innerText=`10 Best High Protein Breakfasts for Muscle Growth
+    const fit = document.getElementById("description");
+    fit.style.background = "lightpink"
+    fit.innerText = `10 Best High Protein Breakfasts for Muscle Growth
     
     1. Avocado Toast With Cottage Cheese
     2. Hard-Boiled Eggs and Ezekiel Bread
@@ -67,12 +67,12 @@ function getDietfit() {
     6. Protein Oatmeal
     9. Southwest Tofu Scramble
     10. Chicken Omelette`
-    
 
 
-    document.getElementById("wg").style.background="yellow"
-    document.getElementById("wl").style.background="yellow"
-    document.getElementById("mg").style.background="lightpink"
+
+    document.getElementById("wg").style.background = "yellow"
+    document.getElementById("wl").style.background = "yellow"
+    document.getElementById("mg").style.background = "lightpink"
 
 
 
@@ -80,9 +80,9 @@ function getDietfit() {
 
 function getDietlunch1() {
 
-    const weightloss=document.getElementById("description2");
+    const weightloss = document.getElementById("description2");
 
-    weightloss.innerText=` A good lunch keeps your metabolism going strong, which in turn results in better, healthier body systems overall.
+    weightloss.innerText = ` A good lunch keeps your metabolism going strong, which in turn results in better, healthier body systems overall.
     
     1. Greek Quinoa Salad
     2. Instant Pot Pakistani Chana Dal
@@ -92,23 +92,23 @@ function getDietlunch1() {
     6. Low-Carb Vegan Tuna Salad
     7. Peanut Crunch Salad
 `
-    weightloss.style.background="lightyellow";
-    weightloss.style.textAlign="center";
-    weightloss.style.borderRadius="20px";
-    weightloss.style.fontSize="15px"
+    weightloss.style.background = "lightyellow";
+    weightloss.style.textAlign = "center";
+    weightloss.style.borderRadius = "20px";
+    weightloss.style.fontSize = "15px"
 
-    document.getElementById("losslunch").style.background="lightyellow";
-    document.getElementById("Gainluch").style.background="yellow"
-    document.getElementById("musclelunch").style.background="yellow"
-    
+    document.getElementById("losslunch").style.background = "lightyellow";
+    document.getElementById("Gainluch").style.background = "yellow"
+    document.getElementById("musclelunch").style.background = "yellow"
+
 }
 
 
 
 function getDietlunch2() {
 
-    const weightgain=document.getElementById("description2");
-    weightgain.innerText=`Foods That Help in Gaining Weight
+    const weightgain = document.getElementById("description2");
+    weightgain.innerText = `Foods That Help in Gaining Weight
 
     1: Milk
     2: Rice
@@ -122,12 +122,12 @@ function getDietlunch2() {
     10.chapati
     11.chicken curry
 `
-weightgain.style.background="lightgreen"
+    weightgain.style.background = "lightgreen"
 
-document.getElementById("losslunch").style.background="yellow";
-    document.getElementById("Gainluch").style.background="lightgreen"
-    document.getElementById("musclelunch").style.background="yellow"
-    
+    document.getElementById("losslunch").style.background = "yellow";
+    document.getElementById("Gainluch").style.background = "lightgreen"
+    document.getElementById("musclelunch").style.background = "yellow"
+
 }
 
 
@@ -135,8 +135,8 @@ document.getElementById("losslunch").style.background="yellow";
 
 function getDietlunch3() {
 
-    const fit=document.getElementById("description2");
-    fit.innerText=`Muscle building foods for gaining lean muscle
+    const fit = document.getElementById("description2");
+    fit.innerText = `Muscle building foods for gaining lean muscle
 
     1.Eggs.
     2.Chicken breast.
@@ -148,17 +148,12 @@ function getDietlunch3() {
     8.Cottage cheese.
 
     `
-    
-
-fit.style.background="lightpink";
 
 
+    fit.style.background = "lightpink";
 
 
-
-
-
-    document.getElementById("losslunch").style.background="yellow";
-    document.getElementById("Gainluch").style.background="yellow"
-    document.getElementById("musclelunch").style.background="lightpink"
+    document.getElementById("losslunch").style.background = "yellow";
+    document.getElementById("Gainluch").style.background = "yellow"
+    document.getElementById("musclelunch").style.background = "lightpink"
 }
