@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workout-plans</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/guide.js"></script>
+  <script src="/js/style.js"></script>
+  <link rel="stylesheet" href="/css/guide.css">
+
+  <style>
+    .three-lines {
+      margin-top: 10px;
+      width: 50px;
+    }
+
+    .img-wk {
+      height: 800px;
+    }
+
+    video {
+      width: 500px;
+      padding: 120px;
+      margin-top: -120px;
+    }
+
+    .mt-5 {
+      width: 500px;
+      font-weight: 30px;
+      margin-left: 520px;
+    }
+
+    @media screen and (max-width:600px) {
+     .mt-5{
+      margin-left: 15px;
+      width: 90%;
+     }
+    }
+
+    h5 {
+      text-align: center;
+    }
+
+    .bk-w {
+      display: flex;
+
+    }
+
+    .wokr-b {
+      width: 200px;
+      height: 500px;
+    }
+
+    .flex {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+    }
+
+    .card-1 {
+      width: 330px;
+      padding: 5px;
+    }
+    .card {
+            width:273px;
+            border: 2px solid black;
+            border-radius: 12px;
+            
+            margin-left:75px;
+            height: auto;
+            
+            
+            display: inline-block; 
+        }
+        .brand-1{
+            padding-top: 0px;
+            
+            border-radius: 10px}
+
+        
+            .img {
+            width: 100%;
+            height: 200px;
+            
+            /* width: 250px; */
+        }
+        .h2 {
+            
+            color: black;
+            background-color: lightgrey;
+            padding: 8px;
+            text-align: center;
+            border: 1px solid gray;
+            margin-top: 0;
+            border-radius: 3px;
+            
+        }
+        .head{
+          margin-left: 90px;
+          font-weight: bold;
+          color: black;
+          
+        }
+
+        .descri{
+          padding: 5px;
+        }
+        .back-side{
+          background-image: url(/img/gym.jpg);
+         
+         
+        }
+        .form
+        {
+          width: 700px;
+          margin-top: 20px;
+          margin-left: auto;
+          margin-right: auto;
+          border: 1px solid black;
+          border-radius: 50px;
+        }
+        input{
+          margin-top:30px;
+         width: 500px;
+         margin-left: 90px;
+         margin-bottom: 10px;
+         border-radius: 10px;
+         color: darkred;
+        }
+
+        .subcribe{
+         margin-left: 700px;
+         background-color: red;
+         margin-top: 10px;
+         
+         
+         
+        }
+
+        .forms{
+          background-image: url(/img/guide-img/background\ running.avif);
+          height: 590px;
+        }
+
+        input{
+          margin-left: 530px;
+          margin-top: 20px;
+          color: black;
+          background-color: white;
+          height: 50px;
+          border: 5px solid white;
+        }
+
+        @media screen and (max-width:600px) {
+
+          input{
+            margin-left: 19px;
+            width:420px ;
+          }
+          
+        }
+        .name-1{
+          margin-top: 100px;
+        }
+        .red-stat{
+          text-align: center;
+          font-weight: 900;
+          font-size: 30px;
+          margin-top: 30px;
+        }
+
+        @media screen and (max-width:600px) {
+        .subcribe{
+            margin-left: 150px;
+          }
+        }
+     
+        
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg text-bg-secondary nav-color">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="/img/logo.jpg" class="logo" height="70px" img-bg-warning></a>
+      <button class="navbar-toggler three-lines" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active fs-5" href="/pages/about_page.html" id="about" onmouseover="about()">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fs-5" href="/pages/contact_page.html" id="contact"
+              onmouseover="contact()">CONTACT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fs-5" href="/pages/guide_page2.html" id="guide" onmouseover="guide()">GUIDE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fs-5" href="#" id="feedback" onmouseover="feedback()">FEEDBACK</a>
+          </li>
+          <li class="nav-item log">
+            <a class="nav-link active fs-5" href="/pages/login_page.html" id="login" onmouseover="login()">LOGIN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fs-5" href="/pages/registration.html" id="registration"
+              onmouseover="registration()">REGISTRATION</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/img/guide-img/begin-workout.jpg" class="d-block w-100 img-wk" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/img/guide-img/beginner workout.jpg" class="d-block w-100 img-wk" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/img/guide-img/advanced-2.webp" class="d-block w-100 img-wk" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div>
+
+    <div>
+      <h5>The Best 15-Minute Warm-Ups</h5>
+
+      <p class="warmup">
+        To stay safe and get the most out of your workout you must always include a pre-workout warm-up before you begin
+        and then finish with a cool down to get your body back into gear. <br><br>
+        <b class="b">Timing:</b> We start with a warmup and then we finish our training session with a cool-down and
+        some stretching. <br>
+
+        <br>
+        Most warmups don’t take very long, just two-three minutes, five minutes tops. To benefit us the most a warm-up
+        should work the same muscles we will be engaging during the main workout - they should include lighter exercises
+        or a toned down version of the training ahead.
+      </p>
+    </div>
+    <br><br>
+
+    <b class="b">Examples</b><br>
+    <ul>
+      <li>If you are a runner, your best warm-up is a light jog.
+      </li>
+      <li>If you are doing martial arts training a warm-up should also include a few light kicks and punches.</li>
+      <li>If you are doing bodyweight workouts basic body (neck, arms, torso, legs) rotations will get your blood
+        flowing.</li>
+      <li>If you are about to lift weights, do a few lifts with very light weights.</li>
+    </ul>
+    <div>
+      <img class="warmup-img" src="/img/guide-img/warup-1.jpg" alt="">
+      <img class="warmup-img" src="/img/guide-img/warmup-2.jpg" alt="">
+      <img class="warmup-img" src="/img/guide-img/warmup-3.jpg" alt="">
+      </p>
+      </p>
+    </div>
+  </div>
+
+  <div>
+    <h1
+      class="bg-warning  text-success-emphasis text-center text-shadow header border border-black p-1 border-2 rounded mt-5">
+      Beginner Workout </h1>
+
+  </div> <br>
+
+
+
+
+
+
+
+
+<div class="back-side">
+  <div class="card">
+    
+    <img class="brand-1 img" src="/img/guide-img/plank.png" alt="Product D Image">
+    <b class="head">Planks</b>
+
+    <p class="descri">An exercise in which you hold your body straight and parallel to the floor while resting on your toes and hands or elbows: Planks are very good for strengthening your core</p>
+      
+        
+
+    
+</div>
+
+<div class="card">
+    
+  <img class="brand-1 img" src="/img/guide-img/sqauts.webp " alt="Product D Image">
+  <b class="head">Squats</b>
+
+  <p class="descri">When performed correctly, squats are a functional exercise that can boost your calorie burn, help prevent injuries, strengthen your core.</p>
+    
+      
+
+  
+</div>
+
+
+<div class="card">
+    
+  <img class="brand-1 img" src="/img/guide-img/ball squats.jpg" alt="Product D Image">
+  <b class="head">Ball Squats</b>
+
+  <p class="descri">The wall ball squat exercise increases your heart rate, making it a great way to improve your cardiorespiratory fitness and burn calories, too. </p>
+    
+      
+
+  
+</div>
+
+
+<div class="card">
+    
+
+  
+  <img class="brand-1 img" src="/img/guide-img/dumbell.png" alt="Product D Image">
+  <b class="head">Dumbbell row</b>
+
+  <p class="descri">The biggest benefit of the dumbbell row is that it can build up the strength you need in the back of your body to maintain good posture.</p>
+    
+      
+
+  
+</div>
+
+<br><br>
+
+<div class="card">
+    
+  <img class="brand-1 img" src="/img/guide-img/leg riases.jpg" alt="Product D Image">
+  <b class="head">Leg Raises</b>
+
+  <p class="descri">aise your legs until they're at 90 degrees from the floor and your lower back begins to come off the ground.</p>
+    
+      
+
+  
+</div>
+
+<div class="card">
+    
+  <img class="brand-1 img" src="/img/guide-img/deadlift.jpg" alt="Product D Image">
+  <b class="head">Deadlift</b>
+
+  <p class="descri"> Doing this full-body movement burns calories, boosts grip strength, builds strength for everyday tasks and improves performance in sports </p>
+    
+      
+
+  
+</div>
+
+<div class="card">
+    
+  <img class="brand-1 img" src="/img/guide-img/bicep curl.jpg" alt="Product D Image">
+  <b class="head"> Biceps</b>
+
+  <p class="descri">Developing strength in the biceps is beneficial for preventing injury and strain when carrying out many everyday functional movements. </p>
+    
+      
+
+  
+</div>
+
+<div class="card">
+    
+  <img class="brand-1 img" src="/img/guide-img/front squats.jpg" alt="Product D Image">
+  <b class="head">Front-Squats</b>
+
+  <p class="descri">They also help strengthen the spinal erectors. These are muscles responsible for keeping the back straight.</p>
+    
+      
+
+  
+</div>
+</div>
+
+
+
+
+<div>
+  <h1
+    class="bg-warning  text-success-emphasis text-center text-shadow header border border-black p-1 border-2 rounded mt-5">
+    Intermediate Workout Routine </h1>
+
+    <p>Along your fitness journey, you’ve learned that a little progress each day adds up to big results. You’ve perfected your form, know your way around the gym, and are ready to take your routine to the next level. The team at Fitness Project is here to help you take things up a notch and reach your goals.</p>
+
+</div> <br>
+
+<h3>Intermediate Workout Day 1</h3>
+
+<table class="table">
+  <thead>
+    <tr class="table-info">
+      <th scope="col">#</th>
+      <th scope="col">Exercise</th>
+      <th scope="col">Sets</th>
+      <th scope="col">Reps</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr >
+      <th scope="row">1</th>
+      <td>Squats</td>
+      <td>3</td>
+      <td> 8-12</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Hack Squats</td>
+      <td>3</td>
+      <td>8-12</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td >Sissy Squats </td>
+      <td>8</td>
+      <td>@2</td>
+      
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td >Leg Extensions </td>
+      <td>3</td>
+      <td>10-12</td>
+      
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td >Lunges </td>
+      <td>3</td>
+      <td>10 Each</td>
+      
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td >Leg Curls  </td>
+      <td>3</td>
+      <td>10-12</td>
+      
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td >Standing Calf Raises</td>
+      <td>4</td>
+      <td>10-12</td>
+      
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td >Stiff Legged Deadlifts  </td>
+      <td>3</td>
+      <td>10-12</td>
+      
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td >Donkey Calf Raises  </td>
+      <td>3</td>
+      <td>10-12</td>
+      
+    </tr>
+
+  </tbody>
+</table>
+
+<br>
+
+<h3>Intermediate Workout Day 2</h3>
+
+<table class="table">
+  <thead>
+    <tr class="table-info">
+      <th scope="col">#</th>
+      <th scope="col">Exercise</th>
+      <th scope="col">Sets</th>
+      <th scope="col">Reps</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Bench Press* </td>
+      <td>3</td>
+      <td> 8-12</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Dumbbell Incline Press </td>
+      <td> 3</td>
+      <td>10-12</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td >Lying Barbell Extensions* </td>
+      <td>3</td>
+      <td>10-12</td>
+      
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td >Dumbbell Fly </td>
+      <td>3</td>
+      <td>10-12</td>
+      
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td >Cable Crossovers  </td>
+      <td>3</td>
+      <td>10-12</td>
+      
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td > Dumbbell Extensions   </td>
+      <td>3</td>
+      <td>10-12</td>
+      
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td >Standing Calf Raises</td>
+      <td>4</td>
+      <td>10-12</td>
+      
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td >Dumbbell Kickbacks  </td>
+      <td>3</td>
+      <td>10-12</td>
+      
+    </tr>
+    
+
+  </tbody>
+  
+</table>
+
+
+
+<h3>Intermediate Workout Day 3</h3>
+
+<table class="table">
+  <thead>
+    <tr class="table-info">
+      <th scope="col">#</th>
+      <th scope="col">Exercise</th>
+      <th scope="col">Sets</th>
+      <th scope="col">Reps</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Deadlifts** </td>
+      <td>3</td>
+      <td> 8-12</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td> Pull Downs* </td>
+      <td> 3</td>
+      <td>10-12</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td >Pull Overs </td>
+      <td>3</td>
+      <td>10-12</td>
+      
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td >Underhand Rows  </td>
+      <td>3</td>
+      <td>10-12</td>
+      
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td >Neutral Grip Cable Rows   </td>
+      <td>3</td>
+      <td>10-12</td>
+      
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td >  Barbell Curls*   </td>
+      <td>3</td>
+      <td>10-12</td>
+      
+    </tr>
+ </tbody>
+  
+</table>
+
+
+
+<h3>Intermediate Workout Day 4</h3>
+
+<table class="table">
+  <thead>
+    <tr class="table-info">
+      <th scope="col">#</th>
+      <th scope="col">Exercise</th>
+      <th scope="col">Sets</th>
+      <th scope="col">Reps</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Shoulder Press* </td>
+      <td>3</td>
+      <td> 8-12</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td> Incline Lateral Raises* </td>
+      <td> 3</td>
+      <td>10-12</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td >Cable Upright Rows </td>
+      <td>3</td>
+      <td>10-12</td>
+      
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td >Lateral Raises  </td>
+      <td>3</td>
+      <td>10-12</td>
+      
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td >Leg Raises  </td>
+      <td>3</td>
+      <td>10-12</td>
+      
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td > Dumbbell Shrugs   </td>
+      <td>3</td>
+      <td>10-12</td>
+      
+    </tr>
+
+    <tr>
+      <th scope="row">3</th>
+      <td >  Sit Ups    </td>
+      <td>3</td>
+      <td>12-15</td>
+      
+    </tr>
+
+  
+ </tbody>
+  
+</table>
+
+
+
+<div >
+  <h1
+    class="bg-warning  text-success-emphasis text-center text-shadow header border border-black p-1 border-2 rounded mt-5">
+   Advanced Workout</h1> 
+</div>
+
+<p class="red-stat">Registration For Advanced Workout...!</p>
+
+
+<div class="forms">
+
+
+  <input type="text" class="name-1" name="" id="Loginname" placeholder="Enter Name" required> <br>
+
+  <input type="text" name="" id="emailid" placeholder="Enter Email" required > <br>
+
+  <input type="text" name="" id="mobno" placeholder="Mob.No" required > <br>
+
+  <input type="text" name="" id="agecount" placeholder="Enter Age" required> <br>
+  
+
+  <input type="text" name="" id="" placeholder="Advanced Workout" disabled>
+  <br><br>
+
+  <button type="button" class="subcribe" id="subcribe" onclick="register()">Registration</button>
+</div>
+
+
+
+
+
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>About Us</h3>
+      <p>We are a fitness site dedicated to helping you reach your health and wellness goals. Our team of certified
+        trainers and nutritionists are here to support you every step of the way.</p>
+    </div>
+    <div class="footer-column">
+      <h3>Services</h3>
+      <ul>
+        <li><a href="./pages/gym_facilities.html">Gym Facility</a></li>
+        <li><a href="./pages/guide_page.html">Nutrition Counseling</a></li>
+        <li><a href="/personal-training">Personal Training</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Contact Us</h3>
+      <p><strong>Email:</strong> <a href="mailto:info@fitnesssite.com">info@fitnesssite.com</a>
+        <br><strong>Phone:</strong><a href="tel:+919900413979">+919900413979</a><br>
+        <strong>Address: </strong> plot 24 Fitness, Pune, Maharashtra, India <br>
+        411000
+      </p>
+    </div>
+    <div class="footer-column">
+      <h3>Follow Us</h3>
+      <ul>
+        <li><a href="https://www.facebook.com/fitness_fusion_club" id="img">Facebook</a></li>
+        <li><a href="https://www.twitter.com/fitness_fusion_club" id="img1">Twitter</a></li>
+        <li><a href="https://www.instagram.com/fitness_fusion_club" id="img2">Instagram</a></li>
+      </ul>
+    </div>
+  </div><br />
+  <div class="footer-copyright">
+    <p>&copy; 2023 Fitness Site. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+
+</html>

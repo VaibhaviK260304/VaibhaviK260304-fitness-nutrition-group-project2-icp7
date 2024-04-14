@@ -97,6 +97,13 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    height: 495px;
    
 }
+
+@media screen and (max-width:600px){
+    .warmup-img{
+        margin-left: 50px;
+        margin-top: 5px;
+    }
+}
 .warmup-img:hover{
     height: 500px;
     transition: 0.5s;
