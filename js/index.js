@@ -102,7 +102,7 @@ function toggleBookmark3()
 
 function toggleDescription(button) {
   let description = button.previousElementSibling;
-  if (description.style.display == "none") {
+  if (description.style.display === "none") {
     description.style.display = "block";
     button.textContent = "Hide Description";
   } else {
