@@ -125,3 +125,27 @@ function btnn3() {
     document.getElementById("Level1").style.background="none";
 }
 
+
+
+function register(){
+    let name=document.getElementById("Loginname");
+    let emailid = document.getElementById("emailid");
+    let mob = document.getElementById("mobno");
+    let age=document.getElementById("agecount");
+
+    if (name.value=="") {
+        alert("Please Enter Name")
+    }
+    else if(emailid.value==""){
+        alert("Please Enter Email")
+    }
+    else if(mob.value==""){
+        alert("Please Enter Mob No")
+    }
+    else if(age.value==""){
+        alert("Please Enter age")
+    }
+    else{
+       alert("Thanks For Register . We will contact you") 
+    }
+}
