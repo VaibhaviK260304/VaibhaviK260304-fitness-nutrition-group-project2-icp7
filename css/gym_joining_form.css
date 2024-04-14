@@ -1,7 +1,8 @@
 body {
     font-family: Arial, sans-serif;
     background: rgb(108,108,108);
-    background: radial-gradient(circle, rgba(108,108,108,1) 34%, rgba(1,1,1,1) 100%);
+    background-image: radial-gradient(circle, rgba(108,108,108,1) 0%, rgba(1,1,1,1) 0%)
+, url('./../img/gym.jpg');
     margin: 0;
     padding: 0;
 }
